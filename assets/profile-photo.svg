@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
+  <title id="title">Profile illustration for Kalkidan Debassu</title>
+  <desc id="desc">Abstract profile illustration with initials K D.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8c7a5"/>
+      <stop offset="100%" stop-color="#87c9bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="720" rx="46" fill="url(#bg)"/>
+  <circle cx="360" cy="286" r="118" fill="#fff4ea" opacity="0.95"/>
+  <path d="M192 612c32-130 113-187 168-187s136 57 168 187" fill="#fff4ea" opacity="0.95"/>
+  <text x="360" y="668" font-family="Sora, Arial, sans-serif" font-size="72" text-anchor="middle" fill="#533723" font-weight="700">K D</text>
+</svg>

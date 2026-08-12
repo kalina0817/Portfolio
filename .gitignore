@@ -1,0 +1,11 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# React app artifacts in nested folder
+kalkidan-portfolio/node_modules/
+kalkidan-portfolio/build/

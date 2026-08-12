@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Decision extraction visual</title>
+  <desc id="desc">Abstract document and analysis illustration for AI decision extraction.</desc>
+  <rect width="800" height="500" rx="36" fill="#efe4d2"/>
+  <rect x="72" y="60" width="430" height="380" rx="24" fill="#fffaf4"/>
+  <rect x="108" y="112" width="278" height="18" rx="9" fill="#d9cec0"/>
+  <rect x="108" y="154" width="320" height="18" rx="9" fill="#d9cec0"/>
+  <rect x="108" y="196" width="244" height="18" rx="9" fill="#d9cec0"/>
+  <rect x="108" y="252" width="180" height="92" rx="18" fill="#d7ebe7"/>
+  <rect x="322" y="252" width="106" height="92" rx="18" fill="#f2be8f"/>
+  <circle cx="616" cy="194" r="96" fill="#172127"/>
+  <path d="M578 196 L606 224 L660 170" fill="none" stroke="#79d1c7" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="392" fill="#172127" font-family="Arial, sans-serif" font-size="28" font-weight="700">Decision Extraction</text>
+  <text x="108" y="422" fill="#58636b" font-family="Arial, sans-serif" font-size="18">Structured analysis with reproducible experimentation</text>
+</svg>

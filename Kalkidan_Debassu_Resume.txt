@@ -1,0 +1,68 @@
+Kalkidan Debassu
+Washington, DC 20011
+202.961.7071
+kalkidandebassu@gmail.com
+LinkedIn: https://www.linkedin.com/in/kalkidan-debassu-901671252/
+GitHub: https://github.com/kalina0817
+
+PROFESSIONAL SUMMARY
+AI, Data Science, and Machine Learning Researcher developing predictive models, computer vision systems, and feature engineering pipelines for real-world datasets. Applies Python, SQL, and deep learning to build and evaluate machine learning models that support classification, prediction, and data analysis. Combines research, preprocessing, and model testing to turn complex problems into production-ready insights.
+
+ACCOMPLISHMENTS
+- Developed a hybrid CCT-YOLO object detection model achieving 91% detection accuracy on the Pascal VOC 2012 dataset.
+- Built and evaluated 6+ machine learning models across regression and classification tasks.
+- Completed 4+ feature engineering pipelines for real-world datasets and analytical workflows.
+- Designed and implemented QR code-based Digital ID Card and Laptop Security systems to improve authentication and verification.
+- Developed software applications using Python, Java, SQL, and REST APIs to support telecommunications operations.
+
+TECHNICAL SKILLS
+- Machine Learning, Deep Learning, Computer Vision, Python, SQL
+- Predictive Modeling, Feature Engineering, Data Preprocessing, Data Analysis
+- Model Evaluation, A/B Testing, Time Series Analysis
+- Data Pipelines, ETL Processes, Database Management Systems, REST APIs, Docker
+- Data Governance, Cloud Data Warehousing, CI/CD Pipelines
+- Model Deployment, Feature Store Management
+
+EXPERIENCE
+AI, Data Science, and Machine Learning Researcher
+University of the District of Columbia | Washington, DC | 01/2025 - Current
+- Developed machine learning models for predictive analytics and classification tasks using diverse datasets.
+- Conducted development of machine learning models aimed at enhancing predictive accuracy within academic research frameworks.
+- Executed data preprocessing and feature engineering pipelines, ensuring high-quality inputs for effective model training and evaluation.
+- Researched and assessed various machine learning algorithms to develop effective solutions for complex technical issues.
+- Leveraged Python and TensorFlow for analysis of large datasets, supporting informed decision-making for faculty initiatives.
+
+Concierge
+A-Class Concierge | 06/2024 - Current
+- Streamlined daily operations by handling visitor requests and ensuring clear communication with stakeholders in a high-pressure setting.
+- Facilitated efficient reservations and transportation logistics, ensuring smooth travel experiences for clients.
+- Managed comprehensive record maintenance and resolved service requests while balancing multiple tasks.
+
+Software Developer
+Kimiya Telecom | 09/2022 - 06/2023
+- Utilized JavaScript frameworks and RESTful APIs to develop robust, scalable web applications.
+- Facilitated requirement analysis and implemented software solutions with cross-functional teams.
+- Analyzed and resolved software issues to enhance system efficiency and application stability.
+
+EDUCATION
+M.S. Computer Science, Expected 12/2026
+University of the District of Columbia | Washington, DC
+- GPA: 4.00
+- National Society of Leadership and Success (NSLS) Member
+- Research Project: CCT-YOLO: Compact Convolutional Transformer for Real-Time Object Detection
+- Research Project: Machine Learning Pipeline for Predictive Analytics
+- Research Project: Housing Price Prediction Model
+
+B.S. Software Engineering, 08/2022
+Bahir Dar University Institute of Technology | Bahir Dar, Ethiopia
+- GPA: 3.32
+- Research Project: Digital ID Card System (Internship Project)
+- Capstone Project: GLO-SEC: Laptop Security and Anti-Theft System, Project Manager
+
+CERTIFICATION
+Microsoft SQL Server DBA & Power BI Professional Program
+Baro Technologies | October - December 2023
+
+LANGUAGES
+- English: Full Professional
+- Amharic: Native or Bilingual

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkidan Debassu | AI & Machine Learning Researcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        nav {
+            text-align: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        h2 {
+            border-left: 5px solid #1a1a1a;
+            padding-left: 10px;
+        }
+        .skills-list, .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Kalkidan Debassu</h1>
+    <p>AI • Machine Learning • Data Science • Computer Vision</p>
+    <p>Washington, DC • 202.961.7071 • kalkidandebassu@gmail.com</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an AI, Data Science, and Machine Learning Researcher with hands-on experience developing 
+        predictive models, computer vision systems, and end-to-end machine learning pipelines. I apply 
+        Python, SQL, and deep learning frameworks to build and evaluate models that improve efficiency 
+        and deliver actionable insights. My work includes developing a hybrid CCT-YOLO object detection 
+        model achieving 91% accuracy and building ML pipelines across multiple real-world datasets.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <strong>Machine Learning & AI:</strong> Predictive Modeling, Deep Learning, Computer Vision, Model Evaluation, A/B Testing, Time Series Analysis<br>
+        <strong>Data Engineering:</strong> ETL Pipelines, Feature Engineering, Data Preprocessing, Database Management, Cloud Data Warehousing<br>
+        <strong>Software & Tools:</strong> Python, SQL, Java, JavaScript, REST APIs, TensorFlow, Docker, Git/GitHub<br>
+        <strong>MLOps:</strong> CI/CD Pipelines, Model Deployment, Feature Store Management
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+        <h3>AI, Data Science & Machine Learning Researcher — UDC (2025–Present)</h3>
+        <p>
+            Developed machine learning models for predictive analytics and classification tasks. Executed 
+            data preprocessing and feature engineering pipelines, researched ML algorithms, and leveraged 
+            Python and TensorFlow to analyze large datasets supporting academic research.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>Software Developer — Kimiya Telecom (2022–2023)</h3>
+        <p>
+            Built scalable web applications using JavaScript frameworks and REST APIs. Conducted requirement 
+            analysis, collaborated with cross-functional teams, and resolved software issues to improve system 
+            stability and performance.
+        </p>
+    </div>
+
+    <div class="experience-item">
+        <h3>Concierge — A-Class Concierge (2024–Present)</h3>
+        <p>
+            Streamlined daily operations, coordinated logistics, and delivered high-quality customer service 
+            in a fast-paced environment.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+        <h3>CCT-YOLO: Real-Time Object Detection</h3>
+        <p>
+            Developed a hybrid Compact Convolutional Transformer + YOLO model achieving 91% detection 
+            accuracy on Pascal VOC 2012. Improved real-time inference performance using Python and TensorFlow.
+        </p>
+        <a href="https://github.com/kalina0817/CCT-YOLO-Real-Time-Object-Detection">GitHub Project</a>
+    </div>
+
+    <div class="project-item">
+        <h3>Machine Learning Pipeline for Predictive Analytics</h3>
+        <p>
+            Built end-to-end ML pipelines for regression and classification using Linear Regression, K-Means, 
+            KNN, PCA, and advanced preprocessing techniques.
+        </p>
+    </div>
+
+    <div class="project-item">
+        <h3>Housing Price Prediction Model</h3>
+        <p>
+            Developed a predictive model using feature selection, EDA, and model evaluation to improve 
+            housing price prediction accuracy.
+        </p>
+    </div>
+
+    <div class="project-item">
+        <h3>Digital ID Card System</h3>
+        <p>
+            Designed a QR-code-based authentication system enabling real-time verification and improved 
+            campus security.
+        </p>
+    </div>
+
+    <div class="project-item">
+        <h3>GLO-SEC Laptop Security System</h3>
+        <p>
+            Managed development of a device registration and anti-theft system using QR code scanning and 
+            authentication workflows.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>M.S. Computer Science — University of the District of Columbia (2026)</strong><br>
+       GPA: 4.00 • NSLS Member</p>
+
+    <p><strong>B.S. Software Engineering — Bahir Dar University (2022)</strong><br>
+       GPA: 3.32</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: kalkidandebassu@gmail.com</p>
+    <p>Phone: 202.961.7071</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/kalkidan-debassu-901671252/">View Profile</a></p>
+    <p>GitHub: <a href="https://github.com/kalina0817">View Projects</a></p>
+</section>
+
+<footer>
+    © 2026 Kalkidan Debassu — AI & Machine Learning Researcher
+</footer>
+
+</body>
+</html>

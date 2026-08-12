@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Housing model visual</title>
+  <desc id="desc">Abstract chart and home icon illustrating price prediction analysis.</desc>
+  <rect width="800" height="500" rx="36" fill="#f4e7d4"/>
+  <rect x="52" y="52" width="696" height="396" rx="28" fill="#fff9f1"/>
+  <path d="M126 332 L126 222 L212 156 L298 222 L298 332 Z" fill="#bd4f2d" opacity="0.92"/>
+  <rect x="162" y="258" width="38" height="74" fill="#fff2e4"/>
+  <rect x="222" y="242" width="42" height="36" fill="#fff2e4"/>
+  <path d="M386 324 C440 294, 492 278, 548 226 C584 194, 618 184, 672 148" fill="none" stroke="#0b7a75" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="386" cy="324" r="10" fill="#0b7a75"/>
+  <circle cx="548" cy="226" r="10" fill="#0b7a75"/>
+  <circle cx="672" cy="148" r="10" fill="#0b7a75"/>
+  <rect x="366" y="108" width="288" height="72" rx="20" fill="#172127" opacity="0.9"/>
+  <text x="392" y="153" fill="#fff7ef" font-family="Arial, sans-serif" font-size="28" font-weight="700">Price Prediction</text>
+  <text x="98" y="402" fill="#172127" font-family="Arial, sans-serif" font-size="28" font-weight="700">Regression Workflow</text>
+  <text x="98" y="432" fill="#58636b" font-family="Arial, sans-serif" font-size="18">EDA, preprocessing, feature engineering, evaluation</text>
+</svg>
