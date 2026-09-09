@@ -54,25 +54,25 @@ function App() {
           </p>
         </section>
 
-        <section className="about-me" aria-label="About Me">
-          <h2>About Me</h2>
+        <section className="about-me" aria-label="Professional Profile">
+          <h2>Professional Profile</h2>
           <div className="about-grid">
             <div>
               <p>
-                I am an AI, Data Science, and Machine Learning researcher with
+                I am an AI, data science, and machine learning researcher with
                 a strong software engineering foundation, focused on developing
-                practical, scalable solutions for real-world datasets and
+                practical and scalable solutions for real-world datasets and
                 decision systems.
               </p>
               <p>
                 I build predictive and classification models, computer vision
                 systems, and feature engineering pipelines using Python and
-                SQL, with emphasis on robust preprocessing, rigorous model
+                SQL, with an emphasis on robust preprocessing, rigorous model
                 evaluation, reproducibility, and measurable outcomes.
               </p>
               <p>
                 My goal is to combine research rigor and engineering practice
-                to turn complex technical challenges into usable, scalable
+                to translate complex technical challenges into usable and scalable
                 solutions that deliver operational value.
               </p>
             </div>
