@@ -39,31 +39,6 @@ function App() {
           <a href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
 
-        <section className="at-glance" aria-label="At a Glance">
-          <h2>Professional Summary</h2>
-          <p>
-            I&apos;m a graduate student in Computer Science and a Software
-            Engineer with a strong interest in building practical technology
-            that solves real-world problems. My work spans software
-            development, artificial intelligence, machine learning, computer
-            vision, data science, software testing, databases, and system
-            design.
-          </p>
-          <p>
-            I&apos;m currently pursuing my M.S. in Computer Science at the
-            University of the District of Columbia, where I maintain a
-            4.00/4.00 GPA and continue to deepen my knowledge through graduate
-            coursework and hands-on projects. I enjoy exploring how modern AI
-            and data-driven approaches can be combined with solid software
-            engineering to create useful, reliable, and efficient systems.
-          </p>
-          <p>
-            This portfolio highlights some of the projects and experiences
-            that have shaped my development as a computer science graduate
-            student and software engineer.
-          </p>
-        </section>
-
         <section className="about-me" aria-label="Professional Profile">
           <h2>Professional Profile</h2>
           <div className="about-grid">
