@@ -6,35 +6,18 @@ function App() {
       <main className="hero" aria-label="Kalkidan Debassu portfolio introduction">
         <h1>Software Engineer | AI &amp; Machine Learning | Computer Vision</h1>
         <p className="tagline">
-          I am a graduate student in Computer Science with a background in
-          software engineering and a strong interest in building intelligent,
-          reliable, and practical technology. My work sits at the intersection
-          of software development, artificial intelligence, machine learning,
-          computer vision, and data-driven systems.
-        </p>
-        <p className="tagline">
-          Throughout my academic and professional experience, I have developed
-          software applications, machine learning models, AI-driven solutions,
-          and software testing systems that address practical problems. I enjoy
-          taking an idea from research and experimentation through
-          implementation, evaluation, and refinement, with a focus on creating
-          solutions that are both technically sound and useful in real-world
-          environments.
-        </p>
-        <p className="tagline">
-          I am currently pursuing my M.S. in Computer Science, where I
-          continue to strengthen my expertise through advanced coursework,
-          research, and hands-on projects. My interests include AI/ML,
-          computer vision, intelligent systems, data engineering, and software
-          engineering.
-        </p>
-        <p className="tagline">
-          Beyond individual projects, I value continuous learning, thoughtful
-          problem-solving, and the ability to turn complex technical
-          challenges into clear, scalable solutions. I am particularly
-          interested in opportunities where I can contribute to meaningful
-          software and AI products while continuing to grow as an engineer and
-          technology professional.
+          Graduate Computer Science student with a strong foundation in
+          software engineering, artificial intelligence, machine learning, and
+          data-driven application development. Experienced in designing and
+          implementing practical software and AI solutions using Python, Java,
+          PyTorch, Scikit-learn, and REST APIs. Academic and project experience
+          includes machine learning, computer vision, intelligent decision
+          systems, software testing, and data analysis. Currently pursuing an
+          M.S. in Computer Science while developing technically rigorous
+          projects that bridge academic research with real-world applications.
+          Passionate about building reliable, intelligent, and scalable
+          software systems and applying emerging technologies to solve complex
+          problems.
         </p>
         <div className="chips" aria-label="Focus areas">
           <span>Software Engineering</span>
