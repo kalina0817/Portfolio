@@ -5,7 +5,12 @@ function App() {
     <div className="App">
       <main className="hero" aria-label="Kalkidan Debassu portfolio introduction">
         <h1>Software Engineer | AI &amp; Machine Learning | Computer Vision</h1>
-        <p className="tagline">Designing reliable, data-driven systems for real-world impact.</p>
+        <p className="tagline">
+          I am a Software Engineer and M.S. Computer Science candidate with a
+          strong foundation in software engineering and applied research,
+          focused on developing intelligent, data-driven solutions to complex
+          technical problems.
+        </p>
         <div className="chips" aria-label="Focus areas">
           <span>Software Engineering</span>
           <span>AI &amp; Machine Learning</span>
