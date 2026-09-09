@@ -2,6 +2,7 @@
   "name": "kalkidan-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kalina0817.github.io/Portfolio",
   "engines": {
     "node": ">=20 <25",
     "npm": ">=10 <12"
