@@ -32,36 +32,33 @@ function App() {
           <div className="about-grid">
             <div>
               <p>
-                I&apos;m a Computer Science graduate student and Software Engineer
-                who enjoys turning ideas into practical software and intelligent
-                systems. My background is in software engineering, and through
-                my graduate studies and projects, I&apos;ve expanded my work into
-                artificial intelligence, machine learning, computer vision, data
-                science, and software testing.
+                My interest in technology started with software engineering and
+                has grown into a broader curiosity about how intelligent
+                systems can be designed to solve practical problems. I enjoy
+                learning how things work, experimenting with new technologies,
+                and turning what I learn into projects that I can actually
+                build and evaluate.
               </p>
               <p>
-                I&apos;m currently pursuing an M.S. in Computer Science at the
-                University of the District of Columbia, where I maintain a
-                4.00/4.00 GPA. My graduate work has given me the opportunity to
-                explore areas such as machine learning, algorithms, databases,
-                artificial intelligence, and data-driven systems while applying
-                what I learn through hands-on projects.
+                Throughout my academic and professional journey, I&apos;ve worked
+                on a variety of projects from software applications and
+                database-driven systems to machine learning, computer vision, AI
+                decision-support, and intelligent software testing. Each project
+                has given me a different perspective on designing systems,
+                solving problems, and improving my technical skills.
               </p>
               <p>
-                I&apos;m particularly interested in the intersection of
-                <strong>software engineering and AI</strong>, building systems
-                that are not only technically sound but also useful in real-world
-                settings. My projects include transformer-enhanced object
-                detection, machine learning analysis, AI decision-support
-                systems, intelligent software testing, and digital
-                identification and security applications.
+                As a graduate student in Computer Science, I&apos;m continuing to
+                deepen my understanding of AI, machine learning, data science,
+                and software engineering. I&apos;m especially interested in the
+                space where these areas come together: building software that is
+                technically sound, useful, and capable of addressing real-world
+                challenges.
               </p>
               <p>
-                I&apos;m continuously learning, experimenting with new
-                technologies, and developing projects that challenge me to think
-                beyond simply making software work. My goal is to build
-                reliable, practical, and meaningful technology while continuing
-                to grow as a software engineer and computer scientist.
+                I see this portfolio as a reflection of that journey what
+                I&apos;ve learned, what I&apos;ve built, and the direction I&apos;m
+                continuing to grow toward.
               </p>
             </div>
           </div>
