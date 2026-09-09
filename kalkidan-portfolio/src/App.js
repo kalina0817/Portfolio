@@ -129,26 +129,172 @@ function App() {
             Machine Learning | Data Science | Predictive Modeling
           </p>
           <p>
-            A practical machine learning project exploring predictive and
-            unsupervised learning through housing price analysis and Iris
-            dataset classification. The project follows an end-to-end workflow,
-            from data preprocessing and feature scaling to model development,
-            dimensionality reduction, clustering, and performance evaluation.
+            <strong>Machine Learning | Predictive Modeling | Data Analysis | PCA | Clustering</strong>
           </p>
-          <p><strong>Key Highlights</strong></p>
+          <p>
+            This project applies supervised and unsupervised machine learning
+            techniques to two fundamentally different datasets: a real-world
+            American housing dataset and the Iris benchmark dataset. The goal
+            was to build an end-to-end machine learning workflow from data
+            preparation and exploratory analysis to model development,
+            evaluation, and interpretation while comparing how different
+            algorithms perform across real-world and structured data.
+          </p>
+          <p>
+            The project demonstrates practical experience with regression,
+            classification, dimensionality reduction, clustering, statistical
+            evaluation, and data visualization using Python and Scikit-learn.
+          </p>
+          <p><strong>The Problem</strong></p>
+          <p>
+            Machine learning models are only as effective as the data and
+            methodology behind them. Real-world datasets often contain missing
+            values, inconsistent data types, outliers, geographic variation,
+            and complex relationships between variables.
+          </p>
           <ul className="project-list">
-            <li>Developed a <strong>Linear Regression model</strong> for housing price prediction.</li>
-            <li>Performed data cleaning, missing-value handling, and <strong>IQR-based outlier removal</strong>.</li>
-            <li>Applied <strong>MinMaxScaler and StandardScaler</strong> for feature preprocessing.</li>
-            <li>Implemented <strong>K-Nearest Neighbors (KNN)</strong> for Iris classification.</li>
-            <li>Applied <strong>Principal Component Analysis (PCA)</strong> for dimensionality reduction and feature-space analysis.</li>
-            <li>Implemented <strong>K-Means clustering</strong> to identify patterns and natural groupings within the data.</li>
-            <li>Evaluated models using <strong>R2, MSE, accuracy, confusion matrix, and silhouette score</strong>.</li>
-            <li>Created visualizations to analyze data patterns and communicate model performance.</li>
+            <li><strong>Housing:</strong> Can property and socioeconomic characteristics be used to predict and classify housing prices and identify meaningful market segments?</li>
+            <li><strong>Iris:</strong> How effectively can machine learning distinguish flower species using measurable physical characteristics?</li>
           </ul>
+          <p>
+            Using both datasets provided an opportunity to evaluate machine
+            learning techniques under very different levels of complexity.
+          </p>
+          <p><strong>Approach</strong></p>
+          <p>
+            Data Preparation -&gt; Exploratory Analysis -&gt; Feature Analysis -&gt;
+            Model Development -&gt; Evaluation -&gt; Dimensionality Reduction -&gt;
+            Clustering -&gt; Interpretation.
+          </p>
+          <p>
+            For the housing dataset, I cleaned missing and invalid values,
+            converted numerical fields into usable formats, and removed extreme
+            observations using the IQR method. The analysis intentionally
+            retained the original, non-normalized values to preserve real-world
+            interpretability.
+          </p>
+          <p>
+            For the Iris dataset, the clean benchmark data required
+            substantially less preprocessing, allowing the focus to shift
+            toward model performance and feature relationships.
+          </p>
+          <p><strong>Machine Learning Models</strong></p>
+          <p><strong>Housing Price Prediction</strong></p>
+          <p>
+            I developed an <strong>Ordinary Least Squares Linear
+            Regression</strong> model using seven numerical features, including
+            beds, baths, living space, zip-code density, median household
+            income, latitude, and longitude. The model achieved a reported
+            <strong>R2 of 0.548</strong> with a reported
+            <strong>MSE of 0.0143</strong>.
+          </p>
+          <ul className="project-list">
+            <li>Living space was the strongest positive predictor of price.</li>
+            <li>Income, bathrooms, and bedrooms also contributed positively.</li>
+            <li>Geographic variables revealed additional regional pricing patterns.</li>
+            <li>Residual analysis showed stronger performance in mid-range prices than extreme values.</li>
+          </ul>
+          <p><strong>Housing Price Classification</strong></p>
+          <p>
+            I transformed housing prices into four quartile-based categories
+            and applied <strong>K-Nearest Neighbors (KNN)</strong> with
+            <strong>k = 5</strong>. The classifier achieved
+            <strong>67.06% accuracy</strong>. Performance was strongest in
+            extreme price categories, with more confusion in neighboring
+            middle-price groups.
+          </p>
+          <p><strong>Housing Market Segmentation</strong></p>
+          <p>
+            To explore patterns without predefined labels, I applied
+            <strong>K-Means clustering with four clusters</strong>.
+          </p>
+          <ul className="project-list">
+            <li>Luxury/high-value properties</li>
+            <li>Mid-range markets</li>
+            <li>Budget/affordable markets</li>
+            <li>Urban compact markets</li>
+          </ul>
+          <p>
+            Clustering achieved a <strong>silhouette score of 0.388</strong>,
+            indicating moderate separation between groups.
+          </p>
+          <p><strong>Dimensionality Reduction</strong></p>
+          <p>
+            I used <strong>Principal Component Analysis (PCA)</strong> to
+            reduce the seven-dimensional housing feature space to three
+            principal components while retaining approximately
+            <strong>70% of total variance</strong>. This made structure and
+            relationships easier to visualize and interpret.
+          </p>
+          <p><strong>Iris Classification and Analysis</strong></p>
+          <p>
+            The Iris dataset contains 150 well-structured samples across three
+            species. Using <strong>KNN (k = 5)</strong>, the model achieved
+            <strong>100% test accuracy</strong> (30/30 correct). Five-fold
+            cross-validation produced average accuracy around
+            <strong>96-97%</strong>, showing strong and consistent
+            performance.
+          </p>
+          <p>
+            PCA showed that approximately <strong>99.5% variance</strong>
+            could be represented with three principal components. Setosa was
+            clearly separated, while Versicolor and Virginica had slight
+            overlap. K-Means clustering with <strong>k = 3</strong> achieved a
+            <strong>silhouette score of 0.509</strong>, aligning well with
+            species labels.
+          </p>
+          <p><strong>Results</strong></p>
+          <ul className="project-list">
+            <li>Housing Price Prediction (Linear Regression): <strong>R2 = 0.548</strong></li>
+            <li>Housing Price Classification (KNN, k=5): <strong>67.06% accuracy</strong></li>
+            <li>Housing Clustering (K-Means, k=4): <strong>Silhouette = 0.388</strong></li>
+            <li>Housing PCA (3 components): <strong>~70% variance</strong></li>
+            <li>Iris Classification (KNN, k=5): <strong>100% test accuracy</strong></li>
+            <li>Iris PCA (3 components): <strong>~99.5% variance</strong></li>
+            <li>Iris Clustering (K-Means, k=3): <strong>Silhouette = 0.509</strong></li>
+          </ul>
+          <p><strong>Key Findings</strong></p>
+          <p>
+            The project highlighted the difference between clean benchmark
+            datasets and real-world data. Iris produced very strong results
+            because classes are well separated and the dataset is highly
+            structured. Housing data introduced more variability and complex
+            relationships, yielding more moderate predictive performance.
+          </p>
+          <ul className="project-list">
+            <li>Real-world machine learning requires significant data preparation.</li>
+            <li>Simple models can provide valuable and interpretable baselines.</li>
+            <li>KNN performs especially well when classes are naturally separated.</li>
+            <li>PCA reveals structure while reducing dimensionality.</li>
+            <li>K-Means can uncover useful segments without predefined labels.</li>
+            <li>Combining quantitative metrics with visualization improves interpretation.</li>
+          </ul>
+          <p><strong>Limitations and Future Improvements</strong></p>
+          <p>
+            The housing analysis could be improved through additional feature
+            engineering and more advanced models, including property age, lot
+            size, school ratings, temporal factors, spatial features, and
+            interaction terms such as beds x baths. Future modeling can
+            evaluate Random Forest, XGBoost, LightGBM, neural networks,
+            ensemble approaches, and systematic hyperparameter optimization.
+          </p>
+          <p>
+            For Iris, further model comparisons can include SVM, Logistic
+            Regression, Decision Trees, Random Forest, and neural networks to
+            examine behavior on highly separable data.
+          </p>
           <p>
             <strong>Technologies:</strong> Python &middot; Pandas &middot; NumPy
             &middot; Scikit-learn &middot; Matplotlib &middot; Seaborn
+          </p>
+          <p><strong>Outcome</strong></p>
+          <p>
+            This project strengthened my ability to develop machine learning
+            solutions beyond simply training a model. I worked through the
+            complete analytical process: preparing imperfect data, selecting
+            algorithms, evaluating performance, interpreting results,
+            identifying limitations, and translating quantitative findings into
+            meaningful insights.
           </p>
           <p>
             <strong>Project Focus:</strong> Predictive Modeling &middot;
