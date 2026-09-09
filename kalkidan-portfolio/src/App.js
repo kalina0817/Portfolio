@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="hero" aria-label="Kalkidan Debassu portfolio introduction">
+        <h1>Software Engineer | AI &amp; Machine Learning | Computer Vision</h1>
+        <p>Building Practical, Data-Driven Solutions.</p>
+        <div className="chips" aria-label="Focus areas">
+          <span>Software Engineering</span>
+          <span>AI &amp; Machine Learning</span>
+          <span>Computer Vision</span>
+          <span>Data-Driven Systems</span>
+        </div>
+      </main>
     </div>
   );
 }
