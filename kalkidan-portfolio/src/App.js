@@ -65,38 +65,44 @@ function App() {
         </section>
 
         <section className="project-highlight" aria-label="CCT-YOLO Project">
-          <h2>CCT-YOLO - Transformer-Enhanced Object Detection</h2>
+          <h2>CCT-YOLO: Transformer-Enhanced Object Detection</h2>
           <p className="project-meta">
-            Deep Learning | Computer Vision | Transformers | Object Detection
+            Deep Learning &middot; Computer Vision &middot; Transformers
+            &middot; YOLO
           </p>
           <p>
-            A transformer-enhanced YOLO object detection system that replaces
-            the conventional Darknet-53 backbone with a <strong>Compact
-            Convolutional Transformer (CCT)</strong> to develop a significantly
-            more lightweight detection architecture. The project explores the
-            use of transformer-based feature extraction for efficient
-            multi-class object detection on the Pascal VOC 2012 dataset.
+            CCT-YOLO is a custom object detection system that combines the YOLO
+            detection framework with a Compact Convolutional Transformer (CCT)
+            backbone. The project explores whether a lightweight
+            transformer-based architecture can reduce model complexity while
+            maintaining practical object detection performance.
           </p>
-          <p><strong>Key Highlights</strong></p>
+          <p><strong>What I Built</strong></p>
           <ul className="project-list">
-            <li>Designed and implemented a <strong>CCT-based YOLO architecture</strong> with convolutional tokenization and multi-head self-attention.</li>
-            <li>Replaced the traditional Darknet-53 backbone with a lightweight <strong>Transformer-based backbone</strong>.</li>
-            <li>Achieved a <strong>97.8% reduction in model parameters</strong>, reducing the model to <strong>1.37M parameters and 5.22 MB</strong>.</li>
-            <li>Trained the model for <strong>25 epochs</strong> on Pascal VOC 2012 and achieved <strong>21.88% mAP@0.5</strong>.</li>
-            <li>Implemented the complete training, evaluation, and inference pipeline using <strong>PyTorch</strong>.</li>
-            <li>Developed custom components for dataset loading, YOLO loss calculation, model training, evaluation, and detection visualization.</li>
-            <li>Evaluated model size, inference performance, mean Average Precision, and per-class detection results.</li>
-            <li>Demonstrated the feasibility of using a <strong>compact transformer backbone for YOLO-based object detection</strong>.</li>
+            <li>Designed and implemented a CCT-based backbone to replace the conventional Darknet-53 architecture used in YOLO.</li>
+            <li>Integrated convolutional tokenization and transformer-based self-attention for feature extraction.</li>
+            <li>Developed the training and evaluation pipeline using PyTorch.</li>
+            <li>Implemented dataset processing, YOLO loss calculation, model training, evaluation, and detection visualization.</li>
+            <li>Trained and evaluated the model on the Pascal VOC 2012 dataset across 20 object classes.</li>
+            <li>Analyzed model size, parameter count, inference performance, and detection accuracy.</li>
           </ul>
           <p>
+            <strong>Results:</strong> The final model contained <strong>1.37
+            million parameters</strong> and had a <strong>5.22 MB model
+            size</strong>, representing a <strong>97.8% reduction in
+            parameters</strong> compared with the baseline architecture. The
+            model achieved <strong>21.88% mAP@0.5</strong> on the Pascal VOC
+            2012 evaluation.
+          </p>
+          <p>
             <strong>Technologies:</strong> Python &middot; PyTorch &middot;
-            Torchvision &middot; NumPy &middot; Pillow &middot; Deep Learning
-            &middot; Computer Vision &middot; Transformers &middot; YOLO
+            Torchvision &middot; NumPy &middot; Pillow &middot; YOLO &middot;
+            Transformers &middot; Deep Learning &middot; Computer Vision
           </p>
           <p>
             <strong>Project Focus:</strong> Transformer-Based Vision &middot;
-            Real-Time Object Detection &middot; Model Efficiency &middot; Deep
-            Learning &middot; Computer Vision
+            Object Detection &middot; Model Efficiency &middot; Deep Learning
+            &middot; Computer Vision
           </p>
           <a
             className="project-link"
