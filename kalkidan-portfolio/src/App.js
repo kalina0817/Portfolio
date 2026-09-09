@@ -6,10 +6,9 @@ function App() {
       <main className="hero" aria-label="Kalkidan Debassu portfolio introduction">
         <h1>Software Engineer | AI &amp; Machine Learning | Computer Vision</h1>
         <p className="tagline">
-          I am a Software Engineer and M.S. Computer Science candidate with a
-          strong foundation in software engineering and applied research,
-          focused on developing intelligent, data-driven solutions to complex
-          technical problems.
+          I&apos;m a graduate student in Computer Science and a Software Engineer
+          with a strong interest in building practical technology that solves
+          real-world problems.
         </p>
         <div className="chips" aria-label="Focus areas">
           <span>Software Engineering</span>
