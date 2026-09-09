@@ -350,25 +350,6 @@ body {
   gap: 1rem;
 }
 
-.cover-letter-card {
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: var(--card);
-  padding: 1rem;
-  box-shadow: var(--shadow);
-}
-
-.cover-letter-card p {
-  margin-top: 0;
-}
-
-.cover-letter-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.8rem;
-}
-
 .contact-card,
 .contact-form {
   border: 1px solid var(--line);
