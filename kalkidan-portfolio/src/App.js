@@ -6,24 +6,12 @@ function App() {
       <main className="hero" aria-label="Kalkidan Debassu portfolio introduction">
         <h1>Software Engineer | AI &amp; Machine Learning | Computer Vision</h1>
         <p className="tagline">
-          I&apos;m a graduate student in Computer Science and a Software Engineer
-          with a strong interest in building practical technology that solves
-          real-world problems. My work spans software development, artificial
-          intelligence, machine learning, computer vision, data science,
-          software testing, databases, and system design.
-        </p>
-        <p className="tagline">
-          I&apos;m currently pursuing my M.S. in Computer Science at the
-          University of the District of Columbia, where I maintain a 4.00/4.00
-          GPA and continue to deepen my knowledge through graduate coursework
-          and hands-on projects. I enjoy exploring how modern AI and
-          data-driven approaches can be combined with solid software engineering
-          to create useful, reliable, and efficient systems.
-        </p>
-        <p className="tagline">
-          This portfolio highlights some of the projects and experiences that
-          have shaped my development as a computer science graduate student and
-          software engineer.
+          I&apos;m a Computer Science graduate student and Software Engineer
+          interested in building practical software and intelligent systems. My
+          work combines software engineering with artificial intelligence,
+          machine learning, computer vision, and data-driven technologies. I&apos;m
+          currently pursuing an M.S. in Computer Science at the University of
+          the District of Columbia, with a 4.00/4.00 GPA.
         </p>
         <div className="chips" aria-label="Focus areas">
           <span>Software Engineering</span>
