@@ -28,29 +28,25 @@ function App() {
         <section className="at-glance" aria-label="At a Glance">
           <h2>Professional Summary</h2>
           <p>
-            I am a Software Engineer and M.S. Computer Science candidate with
-            a strong foundation in software engineering and applied research,
-            focused on developing intelligent, data-driven solutions to
-            complex technical problems. My academic and professional work
-            spans artificial intelligence, machine learning, computer vision,
-            data engineering, and software development, with an emphasis on
-            translating theoretical concepts into practical and reliable
-            systems.
+            I&apos;m a graduate student in Computer Science and a Software
+            Engineer with a strong interest in building practical technology
+            that solves real-world problems. My work spans software
+            development, artificial intelligence, machine learning, computer
+            vision, data science, software testing, databases, and system
+            design.
           </p>
           <p>
-            Through graduate-level study and hands-on projects, I have
-            developed experience in designing software architectures, building
-            machine learning pipelines, developing deep learning and computer
-            vision models, analyzing real-world data, and evaluating technical
-            solutions through systematic experimentation. I approach
-            engineering challenges with a combination of analytical thinking,
-            research-driven problem solving, and practical implementation.
+            I&apos;m currently pursuing my M.S. in Computer Science at the
+            University of the District of Columbia, where I maintain a
+            4.00/4.00 GPA and continue to deepen my knowledge through graduate
+            coursework and hands-on projects. I enjoy exploring how modern AI
+            and data-driven approaches can be combined with solid software
+            engineering to create useful, reliable, and efficient systems.
           </p>
           <p>
-            My goal is to continue developing technologies that connect
-            rigorous computer science principles with meaningful real-world
-            applications, while contributing to innovative software and
-            intelligent systems.
+            This portfolio highlights some of the projects and experiences
+            that have shaped my development as a computer science graduate
+            student and software engineer.
           </p>
         </section>
 
