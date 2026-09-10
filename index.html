@@ -213,6 +213,41 @@
         margin-top: 10px;
       }
 
+      .project-visual {
+        margin-top: 12px;
+      }
+
+      .project-visual img {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: #fff;
+        display: block;
+      }
+
+      .project-visual figcaption {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .visual-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .visual-placeholder {
+        border: 1px dashed #8aa596;
+        border-radius: 10px;
+        background: #f8fbf9;
+        padding: 14px;
+        text-align: center;
+        color: #3f5b4e;
+        font-size: 0.9rem;
+      }
+
       .flow {
         display: flex;
         flex-wrap: wrap;
@@ -326,6 +361,16 @@
           </div>
           <h4>Technologies</h4>
           <p><strong>Python - PyTorch - YOLO - Transformers - CCT - Computer Vision</strong></p>
+          <h4>Architecture Diagram</h4>
+          <figure class="project-visual">
+            <img src="assets/cct-yolo.svg" alt="CCT-YOLO architecture diagram" loading="lazy" />
+            <figcaption>CCT-YOLO architecture diagram</figcaption>
+          </figure>
+          <h4>Detection-Result Screenshots</h4>
+          <div class="visual-grid">
+            <div class="visual-placeholder">Detection result screenshot 1</div>
+            <div class="visual-placeholder">Detection result screenshot 2</div>
+          </div>
           <div class="project-links">
             <a href="https://github.com/kalina0817/CCT-YOLO-Real-Time-Object-Detection" target="_blank" rel="noopener noreferrer">View on GitHub</a>
           </div>
@@ -356,6 +401,8 @@
           <p>The benchmark demonstrated the potential for adaptive ML-based prioritization to improve testing effectiveness under similar processing constraints.</p>
           <h4>Technologies</h4>
           <p><strong>Python - Machine Learning - Data Analysis - Software Testing - Visualization</strong></p>
+          <h4>ALMP Results Chart</h4>
+          <div class="visual-placeholder">ALMP results chart</div>
           <div class="project-links">
             <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">View on GitHub</a>
           </div>
@@ -390,6 +437,11 @@
           <blockquote><strong>Turning model outputs into information that people can understand and use.</strong></blockquote>
           <h4>Technologies</h4>
           <p><strong>Python - Scikit-learn - Machine Learning - Reinforcement Learning - Jupyter Notebook</strong></p>
+          <h4>AI Decision Support Workflow Diagram</h4>
+          <figure class="project-visual">
+            <img src="assets/decision-extraction.svg" alt="AI Decision Support workflow diagram" loading="lazy" />
+            <figcaption>AI Decision Support workflow diagram</figcaption>
+          </figure>
           <div class="project-links">
             <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">View on GitHub</a>
           </div>
@@ -417,6 +469,11 @@
           </ul>
           <h4>Technologies</h4>
           <p><strong>Python - Scikit-learn - Pandas - NumPy - Matplotlib - Jupyter Notebook</strong></p>
+          <h4>ML Analysis Visualizations</h4>
+          <figure class="project-visual">
+            <img src="assets/housing-model.svg" alt="Machine learning analysis visualizations" loading="lazy" />
+            <figcaption>ML analysis visualizations</figcaption>
+          </figure>
           <div class="project-links">
             <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">View on GitHub</a>
           </div>
