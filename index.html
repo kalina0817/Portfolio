@@ -8,6 +8,17 @@
       name="description"
       content="Software Engineer with graduate-level expertise in AI/ML building practical intelligent systems."
     />
+    <link rel="canonical" href="https://kalina0817.github.io/Portfolio/" />
+    <meta name="theme-color" content="#1f5a46" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kalkidan Debassu - Professional Portfolio" />
+    <meta property="og:description" content="Software Engineer with graduate-level expertise in AI/ML building practical intelligent systems." />
+    <meta property="og:url" content="https://kalina0817.github.io/Portfolio/" />
+    <meta property="og:image" content="https://kalina0817.github.io/Portfolio/assets/Profile_Photo.JPG" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kalkidan Debassu - Professional Portfolio" />
+    <meta name="twitter:description" content="Software Engineer with graduate-level expertise in AI/ML building practical intelligent systems." />
+    <meta name="twitter:image" content="https://kalina0817.github.io/Portfolio/assets/Profile_Photo.JPG" />
     <style>
       :root {
         --bg: #f5f7f4;
@@ -153,6 +164,8 @@
         margin-top: 14px;
         border-radius: 14px;
         background: #fdfefd;
+        content-visibility: auto;
+        contain-intrinsic-size: 700px;
       }
 
       #projects .card.featured {
@@ -247,6 +260,11 @@
         display: block;
       }
 
+      .visual-grid .project-visual img {
+        height: 220px;
+        object-fit: contain;
+      }
+
       .project-visual figcaption {
         margin-top: 6px;
         color: var(--muted);
@@ -284,6 +302,12 @@
         color: var(--muted);
         padding: 8px 0 24px;
       }
+
+      @media (max-width: 640px) {
+        .visual-grid .project-visual img {
+          height: 180px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -311,7 +335,7 @@
           <strong>Software engineer with professional development experience and graduate-level expertise in artificial intelligence, machine learning, and computer vision. I build practical software and intelligent systems that combine strong engineering foundations with data-driven methods, measurable evaluation, and real-world problem solving.</strong>
         </blockquote>
         <p><strong>M.S. Computer Science Candidate - University of the District of Columbia</strong></p>
-        <p><strong>Expected Graduation: December 2026 - GPA: 4.00/4.00</strong></p>
+        <p><strong>Expected Graduation: DEC 2026 - GPA: 4.00/4.00</strong></p>
         <p>Washington, DC</p>
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View Projects</a>
@@ -386,17 +410,17 @@
           <p><strong>Python - PyTorch - YOLO - Transformers - CCT - Computer Vision</strong></p>
           <h4>Architecture Diagram</h4>
           <figure class="project-visual">
-            <img src="assets/cct-yolo.svg" alt="CCT-YOLO architecture diagram" loading="lazy" />
+            <img src="assets/cct-yolo.svg" alt="Architecture diagram showing the CCT transformer backbone connected to the YOLO detection head" loading="lazy" decoding="async" fetchpriority="low" />
             <figcaption>CCT-YOLO architecture diagram</figcaption>
           </figure>
           <h4>Detection-Result Screenshots</h4>
           <div class="visual-grid">
             <figure class="project-visual">
-              <img src="assets/Detection_1.jpg.jpg" alt="CCT-YOLO detection result screenshot 1" loading="lazy" />
+              <img src="assets/Detection_1.jpg.jpg" alt="Detection output example with bounding boxes predicted by the CCT-YOLO model" loading="lazy" decoding="async" fetchpriority="low" />
               <figcaption>Detection result screenshot 1</figcaption>
             </figure>
             <figure class="project-visual">
-              <img src="assets/Detection_2.jpg" alt="CCT-YOLO detection result screenshot 2" loading="lazy" />
+              <img src="assets/Detection_2.jpg" alt="Second detection output sample used to evaluate CCT-YOLO localization performance" loading="lazy" decoding="async" fetchpriority="low" />
               <figcaption>Detection result screenshot 2</figcaption>
             </figure>
           </div>
@@ -433,7 +457,10 @@
           <p><strong>Python - Machine Learning - Data Analysis - Software Testing - Visualization</strong></p>
           <h4>ALMP Results Chart</h4>
           <figure class="project-visual">
-            <img src="assets/ALMP%20Results%20Charts.png" alt="ALMP results chart comparing mutation score and total LLM tokens" loading="lazy" />
+            <picture>
+              <source srcset="assets/ALMP%20Results%20Charts.webp" type="image/webp" />
+              <img src="assets/ALMP%20Results%20Charts.png" alt="Benchmark chart comparing ALMP and baseline mutation scores with token usage" loading="lazy" decoding="async" fetchpriority="low" />
+            </picture>
             <figcaption>ALMP results chart</figcaption>
           </figure>
           <div class="project-links">
@@ -473,12 +500,12 @@
           <p><strong>Python - Scikit-learn - Machine Learning - Reinforcement Learning - Jupyter Notebook</strong></p>
           <h4>AI Decision Support Workflow Diagram</h4>
           <figure class="project-visual">
-            <img src="assets/decision-extraction.svg" alt="AI Decision Support workflow diagram" loading="lazy" />
+            <img src="assets/decision-extraction.svg" alt="Workflow showing how model outputs are transformed into decision-ready insights" loading="lazy" decoding="async" fetchpriority="low" />
             <figcaption>AI Decision Support workflow diagram</figcaption>
           </figure>
           <h4>Repository Preview</h4>
           <figure class="project-visual">
-            <img src="assets/repository_preview.svg" alt="AI Decision Support repository preview" loading="lazy" />
+            <img src="assets/repository_preview.svg" alt="Repository structure preview highlighting key modules in the AI Decision Support project" loading="lazy" decoding="async" fetchpriority="low" />
             <figcaption>Repository preview</figcaption>
           </figure>
           <div class="project-links">
@@ -511,7 +538,7 @@
           <p><strong>Python - Scikit-learn - Pandas - NumPy - Matplotlib - Jupyter Notebook</strong></p>
           <h4>ML Analysis Visualizations</h4>
           <figure class="project-visual">
-            <img src="assets/housing-model.svg" alt="Machine learning analysis visualizations" loading="lazy" />
+            <img src="assets/housing-model.svg" alt="Visualization summary of housing prediction and Iris classification model outputs" loading="lazy" decoding="async" fetchpriority="low" />
             <figcaption>ML analysis visualizations</figcaption>
           </figure>
           <div class="project-links">
@@ -540,11 +567,17 @@
           <h4>GLO-SEC System Diagrams</h4>
           <div class="visual-grid">
             <figure class="project-visual">
-              <img src="assets/glosec-use-case.png" alt="GLO-SEC use case diagram" loading="lazy" />
+              <picture>
+                <source srcset="assets/glosec-use-case.webp" type="image/webp" />
+                <img src="assets/glosec-use-case.png" alt="Use case diagram of GLO-SEC actors and core flows for registration and ownership verification" loading="lazy" decoding="async" fetchpriority="low" />
+              </picture>
               <figcaption>Use case diagram</figcaption>
             </figure>
             <figure class="project-visual">
-              <img src="assets/glosec-sequence-transfer-ownership.png" alt="GLO-SEC sequence diagram for transfer ownership" loading="lazy" />
+              <picture>
+                <source srcset="assets/glosec-sequence-transfer-ownership.webp" type="image/webp" />
+                <img src="assets/glosec-sequence-transfer-ownership.png" alt="Sequence diagram showing the step-by-step ownership transfer workflow in GLO-SEC" loading="lazy" decoding="async" fetchpriority="low" />
+              </picture>
               <figcaption>Sequence diagram for transfer ownership</figcaption>
             </figure>
           </div>
@@ -556,7 +589,7 @@
         <h2>Professional Experience</h2>
         <article class="card">
           <h3>Software Developer</h3>
-          <p><strong>Kimiya Telecom · September 2022 – July 2023</strong></p>
+          <p><strong>Kimiya Telecom · SEP 2022-JUL 2023</strong></p>
           <p>Addis Ababa, Ethiopia</p>
           <h4>Key Contributions</h4>
           <ul>
@@ -573,7 +606,7 @@
 
         <article class="card">
           <h3>Software Engineer Intern</h3>
-          <p><strong>Bahir Dar Institute of Technology, Bahir Dar University · March 2021 – August 2021</strong></p>
+          <p><strong>Bahir Dar Institute of Technology, Bahir Dar University · MAR 2021-AUG 2021</strong></p>
           <p>Bahir Dar, Ethiopia</p>
           <p><strong>Digital ID &amp; Campus Access Control System</strong></p>
           <ul>
@@ -589,7 +622,7 @@
         <article class="card">
           <h3>Concierge</h3>
           <p><strong>A-CLASS Concierge Services LLC</strong></p>
-          <p>June 2024 – May 2026</p>
+          <p>JUN 2024-MAY 2026</p>
           <p>Washington, DC</p>
           <p>Provide professional customer service and operational support in an on-site environment.</p>
           <h4>Responsibilities</h4>
@@ -608,7 +641,7 @@
         <article class="card">
           <h3>University of the District of Columbia</h3>
           <p><strong>Master of Science in Computer Science</strong></p>
-          <p><strong>January 2025 - December 2026 · Expected</strong></p>
+          <p><strong>JAN 2025-DEC 2026 · Expected</strong></p>
           <p><strong>GPA: 4.00/4.00</strong></p>
           <h4>Areas of Study</h4>
           <ul>
@@ -626,7 +659,7 @@
         <article class="card">
           <h3>Bahir Dar University</h3>
           <p><strong>Bachelor of Science in Software Engineering</strong></p>
-          <p><strong>October 2017 - August 2022</strong></p>
+          <p><strong>OCT 2017-AUG 2022</strong></p>
           <p><strong>GPA: 3.32/4.00</strong></p>
           <h4>Foundation</h4>
           <ul>
