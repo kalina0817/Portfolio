@@ -1,704 +1,760 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkidan Debassu - Professional Portfolio</title>
     <meta
       name="description"
-      content="Software Engineer specializing in AI & Machine Learning and Computer Vision, building practical, data-driven solutions."
+      content="Software Engineer with graduate-level expertise in AI/ML building practical intelligent systems."
     />
-    <meta
-      name="keywords"
-      content="Kalkidan Debassu, AI engineer, machine learning researcher, computer vision, data science, software engineer"
-    />
-    <meta name="author" content="Kalkidan Debassu" />
-    <meta property="og:title" content="Kalkidan Debassu | AI Portfolio" />
-    <meta
-      property="og:description"
-      content="Software Engineer | AI & Machine Learning | Computer Vision | Building Practical, Data-Driven Solutions"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/Profile_Photo.JPG" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kalkidan Debassu | AI Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Software Engineer | AI & Machine Learning | Computer Vision | Building Practical, Data-Driven Solutions"
-    />
-    <meta name="twitter:image" content="assets/Profile_Photo.JPG" />
-    <title>Kalkidan Debassu | AI Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Kalkidan Debassu",
-        "jobTitle": "Software Engineer | AI & Machine Learning | Computer Vision",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Washington",
-          "addressRegion": "DC",
-          "postalCode": "20011",
-          "addressCountry": "US"
-        },
-        "email": "mailto:kalkidandebassu@gmail.com",
-        "telephone": "+1-202-961-7071",
-        "url": "https://github.com/kalina0817",
-        "sameAs": [
-          "https://www.linkedin.com/in/kalkidan-debassu-901671252/",
-          "https://github.com/kalina0817"
-        ],
-        "knowsAbout": [
-          "Machine Learning",
-          "Artificial Intelligence",
-          "Computer Vision",
-          "Predictive Modeling",
-          "Software Engineering",
-          "Data Science"
-        ],
-        "alumniOf": [
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "University of the District of Columbia"
-          },
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Bahir Dar University Institute of Technology"
-          }
-        ]
+    <style>
+      :root {
+        --bg: #f5f7f4;
+        --panel: #ffffff;
+        --text: #112018;
+        --muted: #496054;
+        --line: #d7e2d9;
+        --accent: #1f5a46;
       }
-    </script>
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 90% 0%, rgba(31, 90, 70, 0.08), transparent 35%),
+          radial-gradient(circle at 0% 100%, rgba(67, 90, 160, 0.06), transparent 35%),
+          var(--bg);
+        color: var(--text);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+      }
+
+      .wrap {
+        width: min(1020px, 94vw);
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(245, 247, 244, 0.95);
+        backdrop-filter: blur(6px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar .wrap {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+      }
+
+      .brand {
+        font-weight: 800;
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      nav a:hover { color: var(--accent); }
+
+      main { padding: 20px 0 40px; }
+
+      .section {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 18px;
+        margin-top: 14px;
+      }
+
+      .label {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.86rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+      }
+
+      h1, h2, h3, h4 { line-height: 1.3; margin: 8px 0; }
+      h1 { font-size: clamp(1.4rem, 3vw, 2rem); }
+      h2 { font-size: clamp(1.2rem, 2.6vw, 1.6rem); }
+      h3 { font-size: clamp(1.06rem, 2.2vw, 1.25rem); }
+      h4 { font-size: 1rem; }
+
+      p { color: var(--muted); margin: 10px 0 0; }
+      ul { margin: 8px 0 0; color: var(--muted); }
+      hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+
+      blockquote {
+        margin: 12px 0 0;
+        border-left: 4px solid var(--accent);
+        padding: 10px 12px;
+        background: #f7fbf8;
+        color: #29463a;
+        font-weight: 600;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .btn {
+        text-decoration: none;
+        border: 1px solid #244a3b;
+        border-radius: 10px;
+        padding: 9px 12px;
+        font-weight: 700;
+        color: #1a372c;
+        background: #fff;
+      }
+
+      .btn.primary {
+        background: #244a3b;
+        color: #fff;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 12px;
+        background: #f9fcf9;
+      }
+
+      #projects .card {
+        padding: 18px;
+        margin-top: 14px;
+        border-radius: 14px;
+        background: #fdfefd;
+      }
+
+      .results {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .result, .project-metric {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: #f8fbf8;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .result strong, .project-metric strong {
+        display: block;
+        color: var(--accent);
+        font-size: 1.15rem;
+      }
+
+      .project-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .flow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      footer {
+        text-align: center;
+        color: var(--muted);
+        padding: 8px 0 24px;
+      }
+    </style>
   </head>
   <body>
-    <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
-    <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
-
-    <header class="site-header" id="home">
-      <div class="container nav-wrap">
+    <header class="topbar">
+      <div class="wrap">
         <a class="brand" href="#home">Kalkidan Debassu</a>
-        <nav class="site-nav" aria-label="Main navigation">
+        <nav aria-label="Main navigation">
+          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="hero container">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Washington, DC</p>
-          <h1>
-            Software Engineer
-            <span>| AI &amp; Machine Learning | Computer Vision</span>
-          </h1>
-          <p>
-            Graduate Computer Science student with a strong foundation in
-            software engineering, artificial intelligence, machine learning,
-            and data-driven application development. Experienced in designing
-            and implementing practical software and AI solutions using Python,
-            Java, PyTorch, Scikit-learn, and REST APIs. Academic and project
-            experience includes machine learning, computer vision, intelligent
-            decision systems, software testing, and data analysis. Currently
-            pursuing an M.S. in Computer Science while developing technically
-            rigorous projects that bridge academic research with real-world
-            applications. Passionate about building reliable, intelligent, and
-            scalable software systems and applying emerging technologies to
-            solve complex problems.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Explore Projects</a>
-          </div>
-        </div>
-
-        <aside class="hero-card reveal" aria-label="Profile summary and image">
-          <div class="profile-photo-wrap">
-            <img
-              id="profile-photo"
-              class="profile-photo"
-              src="assets/Profile_Photo.JPG"
-              data-fallback-src="assets/profile-photo.svg"
-              alt="Profile photo of Kalkidan Debassu"
-            />
-          </div>
-          <div class="hero-links">
-            <a href="mailto:kalkidandebassu@gmail.com">kalkidandebassu@gmail.com</a>
-            <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about" class="section container reveal">
-        <p class="section-label">About</p>
-          <h2>About Me</h2>
-        <div class="about-grid">
-          <div>
-            <p>
-              I am a graduate student in Computer Science with a background in
-              software engineering and a strong interest in building
-              intelligent, reliable, and practical technology. My work sits at
-              the intersection of software development, artificial
-              intelligence, machine learning, computer vision, and data-driven
-              systems.
-            </p>
-            <p>
-              Throughout my academic and professional experience, I have
-              developed software applications, machine learning models,
-              AI-driven solutions, and software testing systems that address
-              practical problems. I enjoy taking an idea from research and
-              experimentation through implementation, evaluation, and
-              refinement, with a focus on creating solutions that are both
-              technically sound and useful in real-world environments.
-            </p>
-            <p>
-              I am currently pursuing my M.S. in Computer Science, where I
-              continue to strengthen my expertise through advanced coursework,
-              research, and hands-on projects. My interests include AI/ML,
-              computer vision, intelligent systems, data engineering, and
-              software engineering.
-            </p>
-            <p>
-              Beyond individual projects, I value continuous learning,
-              thoughtful problem-solving, and the ability to turn complex
-              technical challenges into clear, scalable solutions. I am
-              particularly interested in opportunities where I can contribute
-              to meaningful software and AI products while continuing to grow
-              as an engineer and technology professional.
-            </p>
-          </div>
+    <main class="wrap">
+      <section class="section" id="home">
+        <p class="label">Home</p>
+        <h2>Kalkidan Debassu</h2>
+        <h1>Software Engineer | AI &amp; Machine Learning | Computer Vision</h1>
+        <blockquote>
+          <strong>Building practical software and intelligent systems that turn data, machine learning, and engineering into useful real-world solutions.</strong>
+        </blockquote>
+        <p><strong>M.S. Computer Science Candidate - University of the District of Columbia</strong></p>
+        <p><strong>Expected Graduation: December 2026 - GPA: 4.00/4.00</strong></p>
+        <p>Washington, DC</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/kalkidandebassu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:kalinamulugeta0817@gmail.com">Contact Me</a>
         </div>
       </section>
 
-      <section id="projects" class="section container reveal">
-        <p class="section-label">Projects</p>
-        <h2>Selected work</h2>
-        <div class="cards project-cards">
+      <section class="section" id="at-a-glance">
+        <p class="label">At a Glance</p>
+        <div class="grid-2">
           <article class="card">
-            <img
-              class="card-image"
-              src="assets/cct-yolo.svg"
-              alt="CCT-YOLO object detection project visual"
-              loading="lazy"
-            />
-            <p class="card-meta">Deep Learning &middot; Computer Vision &middot; Transformers &middot; YOLO</p>
-            <h3>CCT-YOLO: Transformer-Enhanced Object Detection</h3>
-            <p>
-              CCT-YOLO is a custom object detection system that combines the
-              YOLO detection framework with a Compact Convolutional
-              Transformer (CCT) backbone. The project explores whether a
-              lightweight transformer-based architecture can reduce model
-              complexity while maintaining practical object detection
-              performance.
-            </p>
-            <p><strong>What I Built</strong></p>
-            <ul class="experience-list">
-              <li>Designed and implemented a CCT-based backbone to replace the conventional Darknet-53 architecture used in YOLO.</li>
-              <li>Integrated convolutional tokenization and transformer-based self-attention for feature extraction.</li>
-              <li>Developed the training and evaluation pipeline using PyTorch.</li>
-              <li>Implemented dataset processing, YOLO loss calculation, model training, evaluation, and detection visualization.</li>
-              <li>Trained and evaluated the model on the Pascal VOC 2012 dataset across 20 object classes.</li>
-              <li>Analyzed model size, parameter count, inference performance, and detection accuracy.</li>
-            </ul>
-            <p>
-              <strong>Results:</strong> The final model contained <strong>1.37 million parameters</strong> and had a <strong>5.22 MB model size</strong>, representing a <strong>97.8% reduction in parameters</strong> compared with the baseline architecture. The model achieved <strong>21.88% mAP@0.5</strong> on the Pascal VOC 2012 evaluation.
-            </p>
-            <p><strong>Technologies:</strong> Python &middot; PyTorch &middot; Torchvision &middot; NumPy &middot; Pillow &middot; YOLO &middot; Transformers &middot; Deep Learning &middot; Computer Vision</p>
-            <p><strong>Project Focus:</strong> Transformer-Based Vision &middot; Object Detection &middot; Model Efficiency &middot; Deep Learning &middot; Computer Vision</p>
-            <p><strong>GitHub:</strong> View the source code and implementation on GitHub.</p>
-            <a href="https://github.com/kalina0817/CCT-YOLO-Real-Time-Object-Detection" target="_blank" rel="noopener noreferrer"
-              >View on GitHub</a
-            >
+            <h3>Software Engineering</h3>
+            <p>Professional experience developing and maintaining software applications, working with databases, backend functionality, testing, and the software development lifecycle.</p>
           </article>
-
           <article class="card">
-            <img
-              class="card-image"
-              src="assets/housing-model.svg"
-              alt="Housing price prediction project visual"
-              loading="lazy"
-            />
-            <p class="card-meta">Machine Learning | Data Science | Predictive Modeling</p>
-            <h3>Housing &amp; Iris Machine Learning Analysis</h3>
-            <p><strong>Machine Learning | Predictive Modeling | Data Analysis | PCA | Clustering</strong></p>
-            <p>
-              This project applies supervised and unsupervised machine
-              learning techniques to two fundamentally different datasets: a
-              real-world American housing dataset and the Iris benchmark
-              dataset. The goal was to build an end-to-end machine learning
-              workflow from data preparation and exploratory analysis to model
-              development, evaluation, and interpretation while comparing how
-              different algorithms perform across real-world and structured
-              data.
-            </p>
-            <p>
-              The project demonstrates practical experience with regression,
-              classification, dimensionality reduction, clustering,
-              statistical evaluation, and data visualization using Python and
-              Scikit-learn.
-            </p>
-            <p><strong>The Problem</strong></p>
-            <p>
-              Machine learning models are only as effective as the data and
-              methodology behind them. Real-world datasets often contain
-              missing values, inconsistent data types, outliers, geographic
-              variation, and complex relationships between variables.
-            </p>
-            <ul class="experience-list">
-              <li><strong>Housing:</strong> Can property and socioeconomic characteristics be used to predict and classify housing prices and identify meaningful market segments?</li>
-              <li><strong>Iris:</strong> How effectively can machine learning distinguish flower species using measurable physical characteristics?</li>
-            </ul>
-            <p>
-              Using both datasets provided an opportunity to evaluate machine
-              learning techniques under very different levels of complexity.
-            </p>
-            <p><strong>Approach</strong></p>
-            <p>
-              Data Preparation -&gt; Exploratory Analysis -&gt; Feature Analysis
-              -&gt; Model Development -&gt; Evaluation -&gt; Dimensionality
-              Reduction -&gt; Clustering -&gt; Interpretation.
-            </p>
-            <p>
-              For the housing dataset, I cleaned missing and invalid values,
-              converted numerical fields into usable formats, and removed
-              extreme observations using the IQR method. The analysis
-              intentionally retained the original, non-normalized values to
-              preserve real-world interpretability.
-            </p>
-            <p>
-              For the Iris dataset, the clean benchmark data required
-              substantially less preprocessing, allowing the focus to shift
-              toward model performance and feature relationships.
-            </p>
-            <p><strong>Machine Learning Models</strong></p>
-            <p><strong>Housing Price Prediction</strong></p>
-            <p>
-              I developed an <strong>Ordinary Least Squares Linear
-              Regression</strong> model using seven numerical features,
-              including beds, baths, living space, zip-code density, median
-              household income, latitude, and longitude. The model achieved a
-              reported <strong>R2 of 0.548</strong> with a reported
-              <strong>MSE of 0.0143</strong>.
-            </p>
-            <ul class="experience-list">
-              <li>Living space was the strongest positive predictor of price.</li>
-              <li>Income, bathrooms, and bedrooms also contributed positively.</li>
-              <li>Geographic variables revealed additional regional pricing patterns.</li>
-              <li>Residual analysis showed stronger performance in mid-range prices than extreme values.</li>
-            </ul>
-            <p><strong>Housing Price Classification</strong></p>
-            <p>
-              I transformed housing prices into four quartile-based categories
-              and applied <strong>K-Nearest Neighbors (KNN)</strong> with
-              <strong>k = 5</strong>. The classifier achieved
-              <strong>67.06% accuracy</strong>. Performance was strongest in
-              extreme price categories, with more confusion in neighboring
-              middle-price groups.
-            </p>
-            <p><strong>Housing Market Segmentation</strong></p>
-            <p>
-              To explore patterns without predefined labels, I applied
-              <strong>K-Means clustering with four clusters</strong>.
-            </p>
-            <ul class="experience-list">
-              <li>Luxury/high-value properties</li>
-              <li>Mid-range markets</li>
-              <li>Budget/affordable markets</li>
-              <li>Urban compact markets</li>
-            </ul>
-            <p>
-              Clustering achieved a <strong>silhouette score of 0.388</strong>,
-              indicating moderate separation between groups.
-            </p>
-            <p><strong>Dimensionality Reduction</strong></p>
-            <p>
-              I used <strong>Principal Component Analysis (PCA)</strong> to
-              reduce the seven-dimensional housing feature space to three
-              principal components while retaining approximately
-              <strong>70% of total variance</strong>. This made structure and
-              relationships easier to visualize and interpret.
-            </p>
-            <p><strong>Iris Classification and Analysis</strong></p>
-            <p>
-              The Iris dataset contains 150 well-structured samples across
-              three species. Using <strong>KNN (k = 5)</strong>, the model
-              achieved <strong>100% test accuracy</strong> (30/30 correct).
-              Five-fold cross-validation produced average accuracy around
-              <strong>96-97%</strong>, showing strong and consistent
-              performance.
-            </p>
-            <p>
-              PCA showed that approximately <strong>99.5% variance</strong>
-              could be represented with three principal components. Setosa was
-              clearly separated, while Versicolor and Virginica had slight
-              overlap. K-Means clustering with <strong>k = 3</strong> achieved
-              a <strong>silhouette score of 0.509</strong>, aligning well with
-              species labels.
-            </p>
-            <p><strong>Results</strong></p>
-            <ul class="experience-list">
-              <li>Housing Price Prediction (Linear Regression): <strong>R2 = 0.548</strong></li>
-              <li>Housing Price Classification (KNN, k=5): <strong>67.06% accuracy</strong></li>
-              <li>Housing Clustering (K-Means, k=4): <strong>Silhouette = 0.388</strong></li>
-              <li>Housing PCA (3 components): <strong>~70% variance</strong></li>
-              <li>Iris Classification (KNN, k=5): <strong>100% test accuracy</strong></li>
-              <li>Iris PCA (3 components): <strong>~99.5% variance</strong></li>
-              <li>Iris Clustering (K-Means, k=3): <strong>Silhouette = 0.509</strong></li>
-            </ul>
-            <p><strong>Key Findings</strong></p>
-            <p>
-              The project highlighted the difference between clean benchmark
-              datasets and real-world data. Iris produced very strong results
-              because classes are well separated and the dataset is highly
-              structured. Housing data introduced more variability and complex
-              relationships, yielding more moderate predictive performance.
-            </p>
-            <ul class="experience-list">
-              <li>Real-world machine learning requires significant data preparation.</li>
-              <li>Simple models can provide valuable and interpretable baselines.</li>
-              <li>KNN performs especially well when classes are naturally separated.</li>
-              <li>PCA reveals structure while reducing dimensionality.</li>
-              <li>K-Means can uncover useful segments without predefined labels.</li>
-              <li>Combining quantitative metrics with visualization improves interpretation.</li>
-            </ul>
-            <p><strong>Limitations and Future Improvements</strong></p>
-            <p>
-              The housing analysis could be improved through additional feature
-              engineering and more advanced models, including property age, lot
-              size, school ratings, temporal factors, spatial features, and
-              interaction terms such as beds x baths. Future modeling can
-              evaluate Random Forest, XGBoost, LightGBM, neural networks,
-              ensemble approaches, and systematic hyperparameter optimization.
-            </p>
-            <p>
-              For Iris, further model comparisons can include SVM, Logistic
-              Regression, Decision Trees, Random Forest, and neural networks to
-              examine behavior on highly separable data.
-            </p>
-            <p>
-              <strong>Technologies:</strong> Python &middot; Pandas &middot; NumPy &middot; Scikit-learn &middot; Matplotlib &middot; Seaborn
-            </p>
-            <p><strong>Outcome</strong></p>
-            <p>
-              This project strengthened my ability to develop machine learning
-              solutions beyond simply training a model. I worked through the
-              complete analytical process: preparing imperfect data, selecting
-              algorithms, evaluating performance, interpreting results,
-              identifying limitations, and translating quantitative findings
-              into meaningful insights.
-            </p>
-            <p><strong>Project Focus:</strong> Predictive Modeling &middot; Classification &middot; Clustering &middot; Dimensionality Reduction &middot; Data Preprocessing &middot; Machine Learning</p>
-            <a href="https://github.com/kalina0817/housing-iris-ml-analysis" target="_blank" rel="noopener noreferrer"
-              >View Repository</a
-            >
+            <h3>Artificial Intelligence</h3>
+            <p>Graduate-level experience applying machine learning, deep learning, reinforcement learning, and AI techniques to practical problems.</p>
           </article>
-
           <article class="card">
-            <img
-              class="card-image"
-              src="assets/security-systems.svg"
-              alt="Digital ID card system project visual"
-              loading="lazy"
-            />
-            <p class="card-meta">Software Engineering | Desktop Application | QR Technology | Digital Identity</p>
-            <h3>Digital ID Card System: QR-Based Student Identification and Verification Platform</h3>
-            <p>
-              A digital student identification system designed to replace
-              traditional physical student ID cards with a
-              <strong>QR-enabled digital identification and verification
-              platform</strong>. The system provides students with a
-              convenient digital ID while enabling authorized campus personnel
-              to quickly verify student identity and access relevant campus
-              services.
-            </p>
-            <p><strong>Key Highlights</strong></p>
-            <ul class="experience-list">
-              <li>Developed a digital student ID system for <strong>secure and efficient identity verification</strong>.</li>
-              <li>Generated <strong>QR-based student identification</strong> to support fast verification.</li>
-              <li>Designed student profiles containing identification and academic information.</li>
-              <li>Replaced traditional physical ID cards with a centralized digital identification workflow.</li>
-              <li>Integrated student ID verification with campus service access, including <strong>meal and cafeteria eligibility</strong>.</li>
-              <li>Designed the system to simplify identity management and reduce reliance on manually checking physical credentials.</li>
-              <li>Applied software engineering principles to develop a practical solution for a university campus environment.</li>
-            </ul>
-            <p>
-              <strong>Technologies:</strong> Java &middot; Desktop Application Development &middot; QR Code Technology &middot; Object-Oriented Programming &middot; Software Engineering
-            </p>
-            <p><strong>Project Focus:</strong> Digital Identity &middot; Student Verification &middot; Campus Technology &middot; QR-Based Systems &middot; Software Engineering</p>
-            <a href="#experience">See Related Experience</a>
+            <h3>Computer Vision</h3>
+            <p>Designed and implemented transformer-enhanced object detection systems using YOLO, CCT, and deep-learning techniques.</p>
           </article>
-
           <article class="card">
-            <img
-              class="card-image"
-              src="assets/security-systems.svg"
-              alt="GLO-SEC device security project visual"
-              loading="lazy"
-            />
-            <p class="card-meta">Cybersecurity | Software Engineering | QR Technology | Security Automation</p>
-            <h3>GLO-SEC - QR-Based Laptop Security System</h3>
-            <p>
-              A QR-based laptop security system designed to strengthen device
-              identification, ownership verification, and recovery processes.
-              GLO-SEC combines digital identification with security-focused
-              workflows to help users register devices, associate them with
-              ownership information, and support verification in the event of
-              loss or unauthorized possession.
-            </p>
-            <p><strong>Key Highlights</strong></p>
-            <ul class="experience-list">
-              <li>Designed a <strong>QR-based device identification and verification system</strong> for laptop security.</li>
-              <li>Developed a digital mechanism for associating laptops with registered ownership information.</li>
-              <li>Used QR technology to enable fast device identification and verification.</li>
-              <li>Designed security workflows to support <strong>lost-device identification and recovery</strong>.</li>
-              <li>Applied software engineering principles to develop a practical cybersecurity solution.</li>
-              <li>Focused on improving device traceability while reducing reliance on traditional physical identification methods.</li>
-            </ul>
-            <p>
-              <strong>Technologies:</strong> Java &middot; QR Code Technology &middot; Object-Oriented Programming &middot; Software Engineering &middot; Cybersecurity
-            </p>
-            <p><strong>Project Focus:</strong> Cybersecurity &middot; Digital Identification &middot; Device Security &middot; QR-Based Verification &middot; Security Automation</p>
-            <a href="#experience">See Related Experience</a>
-          </article>
-
-          <article class="card">
-            <img
-              class="card-image"
-              src="assets/decision-extraction.svg"
-              alt="Decision extraction data science project visual"
-              loading="lazy"
-            />
-            <p class="card-meta">Artificial Intelligence | Machine Learning | Data Science | Decision Support</p>
-            <h3>AI Decision Extraction System</h3>
-            <p>
-              An AI-driven decision-support project that transforms machine
-              learning and reinforcement learning outputs into interpretable,
-              actionable decisions. The system applies multiple algorithms
-              across housing, healthcare, image classification, and
-              reinforcement learning tasks, demonstrating how model predictions
-              can be translated into rankings, risk assessments,
-              classifications, and policy decisions.
-            </p>
-            <p><strong>Key Highlights</strong></p>
-            <ul class="experience-list">
-              <li>Applied <strong>K-Means clustering</strong> to identify meaningful groups and generate ranked decision outputs.</li>
-              <li>Implemented <strong>Lambda-connectedness</strong> for analyzing relationships and structured decision patterns.</li>
-              <li>Applied <strong>Support Vector Machines (SVM)</strong> for classification and risk-oriented analysis.</li>
-              <li>Used <strong>Neural Networks</strong> for image classification and confidence-based decision extraction.</li>
-              <li>Implemented <strong>Q-learning</strong> to derive optimal policies within a reinforcement learning environment.</li>
-              <li>Transformed raw model outputs into <strong>rankings, top-k selections, risk categories, and policy decisions</strong>.</li>
-              <li>Worked with <strong>California Housing, Breast Cancer Wisconsin, MNIST, and FrozenLake</strong> datasets.</li>
-              <li>Focused on <strong>model interpretability and actionable decision extraction</strong> rather than treating predictions as the final output.</li>
-            </ul>
-            <p>
-              <strong>Technologies:</strong> Python &middot; Scikit-learn &middot; NumPy &middot; Pandas &middot; Jupyter Notebook &middot; Machine Learning &middot; Neural Networks &middot; Reinforcement Learning
-            </p>
-            <p><strong>Project Focus:</strong> AI Decision Support &middot; Machine Learning &middot; Model Interpretability &middot; Predictive Analytics &middot; Classification &middot; Clustering &middot; Reinforcement Learning</p>
-            <a href="https://github.com/kalina0817/AI-Decision-Extraction-System" target="_blank" rel="noopener noreferrer"
-              >View Repository</a
-            >
-          </article>
-
-          <article class="card">
-            <img
-              class="card-image"
-              src="assets/decision-extraction.svg"
-              alt="Machine learning research project visual"
-              loading="lazy"
-            />
-            <p class="card-meta">Machine Learning | Software Testing | Test Optimization | Python</p>
-            <h3>Adaptive Learning-Based Mutation Prioritization (ALMP)</h3>
-            <p>
-              An adaptive machine learning framework designed to improve the
-              efficiency of mutation testing by intelligently prioritizing
-              high-value mutants. Instead of processing mutants uniformly,
-              ALMP uses learned patterns to identify and rank mutants with
-              higher predicted impact, enabling more effective testing under
-              limited processing and computational budgets.
-            </p>
-            <p><strong>Key Highlights</strong></p>
-            <ul class="experience-list">
-              <li>Developed an ML-based framework for <strong>intelligent mutation prioritization</strong>.</li>
-              <li>Ranked mutants according to their predicted testing value rather than processing them randomly.</li>
-              <li>Achieved a <strong>75% mutation score compared with 25% for the baseline strategy</strong> in the benchmark scenario.</li>
-              <li>Analyzed mutant characteristics and <strong>feature importance</strong> to improve interpretability of prioritization decisions.</li>
-              <li>Evaluated <strong>mutation effectiveness, token usage, and cost efficiency</strong> against a baseline workflow.</li>
-              <li>Integrated software metrics and machine learning to optimize automated testing workflows.</li>
-              <li>Designed the framework to reduce unnecessary processing while prioritizing mutants most likely to improve test effectiveness.</li>
-            </ul>
-            <p>
-              <strong>Technologies:</strong> Python &middot; Scikit-learn &middot; Pandas &middot; Matplotlib &middot; Lizard &middot; Tiktoken &middot; Jupyter Notebook &middot; Machine Learning
-            </p>
-            <p><strong>Project Focus:</strong> Intelligent Software Testing &middot; Mutation Testing &middot; Machine Learning &middot; Test Optimization &middot; Cost-Efficient AI</p>
-            <a href="https://github.com/kalina0817/Adaptive-Learning-Based-Mutation-Prioritization--ALMP" target="_blank" rel="noopener noreferrer"
-              >View Repository</a
-            >
+            <h3>Data-Driven Engineering</h3>
+            <p>Experience transforming data and model outputs into predictions, rankings, classifications, risk categories, and decision-support results.</p>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="section container reveal">
-        <p class="section-label">Skills</p>
-        <h2>Technical Skills</h2>
-        <div class="skill-groups">
-          <article>
-            <h3>Machine Learning and AI</h3>
-            <p>
-              Machine Learning, Deep Learning, Computer Vision, Python, SQL
-            </p>
+      <section class="section" id="selected-results">
+        <p class="label">Selected Results</p>
+        <div class="results">
+          <div class="result"><strong>4.00/4.00</strong>M.S. Computer Science GPA</div>
+          <div class="result"><strong>97.8%</strong>Parameter reduction achieved by CCT-YOLO</div>
+          <div class="result"><strong>5.22 MB</strong>CCT-YOLO model size</div>
+          <div class="result"><strong>75%</strong>Mutation score achieved by ALMP in the benchmark scenario</div>
+          <div class="result"><strong>2026</strong>Expected M.S. Computer Science graduation</div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <p class="label">Projects</p>
+        <h2>Featured Projects</h2>
+        <p>These should be the largest project cards on your website.</p>
+
+        <article class="card">
+          <h3>01 - CCT-YOLO</h3>
+          <h4><strong>Transformer-Enhanced Real-Time Object Detection</strong></h4>
+          <p><strong>Deep Learning - Computer Vision - Transformers - YOLO</strong></p>
+          <p>CCT-YOLO is a lightweight object detection system that explores the use of a <strong>Compact Convolutional Transformer (CCT)</strong> as an alternative backbone for YOLO-based object detection.</p>
+          <p>The project was designed to investigate whether transformer-based representations could be integrated into an object detection architecture while substantially reducing model complexity.</p>
+          <h4>What I Built</h4>
+          <ul>
+            <li>Designed a custom CCT backbone using convolutional tokenization and transformer encoder layers.</li>
+            <li>Integrated the CCT backbone with a YOLO detection head.</li>
+            <li>Built the complete machine-learning pipeline from dataset processing through inference.</li>
+            <li>Trained and evaluated the model using the <strong>Pascal VOC 2012</strong> dataset.</li>
+            <li>Implemented loss calculation, evaluation, inference, and detection visualization.</li>
+            <li>Analyzed model size, parameter count, detection performance, and per-class results.</li>
+          </ul>
+          <h4>Results</h4>
+          <div class="project-metrics">
+            <div class="project-metric"><strong>97.8%</strong>Parameter reduction</div>
+            <div class="project-metric"><strong>5.22 MB</strong>Final model size</div>
+            <div class="project-metric"><strong>1.37M</strong>Model parameters</div>
+            <div class="project-metric"><strong>21.88%</strong>mAP@0.5</div>
+            <div class="project-metric"><strong>25 epochs</strong>Training</div>
+          </div>
+          <h4>Technologies</h4>
+          <p><strong>Python - PyTorch - YOLO - Transformers - CCT - Computer Vision</strong></p>
+          <div class="project-links">
+            <a href="https://github.com/kalina0817/CCT-YOLO-Real-Time-Object-Detection" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#">View Case Study</a>
+          </div>
+        </article>
+
+        <hr />
+
+        <article class="card">
+          <h3>02 - ALMP</h3>
+          <h4><strong>Adaptive Learning-Based Mutation Prioritization</strong></h4>
+          <p><strong>Machine Learning - Software Testing - Software Engineering</strong></p>
+          <p>ALMP is a machine-learning framework designed to improve the efficiency of mutation testing by intelligently prioritizing mutants according to their predicted testing value.</p>
+          <p>Instead of treating every generated mutant equally, the system explores how machine learning can identify mutants that are more valuable for testing.</p>
+          <h4>What I Built</h4>
+          <ul>
+            <li>Developed an ML-based mutant prioritization approach.</li>
+            <li>Analyzed mutant characteristics influencing prioritization decisions.</li>
+            <li>Built a benchmarking workflow against a baseline/random selection strategy.</li>
+            <li>Evaluated mutation score, token usage, and cost efficiency.</li>
+            <li>Applied data analysis and visualization to interpret results.</li>
+            <li>Implemented the framework in Python.</li>
+          </ul>
+          <h4>Results</h4>
+          <div class="project-metrics">
+            <div class="project-metric"><strong>75%</strong>Mutation score</div>
+            <div class="project-metric"><strong>25%</strong>Baseline mutation score</div>
+          </div>
+          <p>The benchmark demonstrated the potential for adaptive ML-based prioritization to improve testing effectiveness under similar processing constraints.</p>
+          <h4>Technologies</h4>
+          <p><strong>Python - Machine Learning - Data Analysis - Software Testing - Visualization</strong></p>
+          <div class="project-links">
+            <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#">View Case Study</a>
+          </div>
+        </article>
+
+        <hr />
+
+        <article class="card">
+          <h3>03 - AI Decision Support</h3>
+          <h4><strong>AI Decision Extraction &amp; Decision-Support System</strong></h4>
+          <p><strong>Artificial Intelligence - Machine Learning - Reinforcement Learning</strong></p>
+          <p>This project explores how machine-learning and reinforcement-learning outputs can be transformed into <strong>interpretable decisions</strong> rather than simply presenting raw model predictions.</p>
+          <p>The system was designed as a reusable workflow for converting model outputs into practical decision-oriented information.</p>
+          <h4>What I Built</h4>
+          <ul>
+            <li>Applied <strong>K-Means clustering</strong>.</li>
+            <li>Applied <strong>Support Vector Machines (SVM)</strong>.</li>
+            <li>Developed neural-network-based workflows.</li>
+            <li>Applied <strong>Q-learning</strong> for reinforcement learning.</li>
+            <li>Worked with California Housing, Breast Cancer Wisconsin, MNIST, and FrozenLake datasets.</li>
+            <li>Converted model outputs into rankings, top-k selections, risk categories, grouped segments, and reinforcement-learning policies.</li>
+            <li>Designed the project as a modular Python/Jupyter workflow.</li>
+          </ul>
+          <h4>Example Decision Outputs</h4>
+          <div class="project-metrics">
+            <div class="project-metric"><strong>Housing</strong>Property rankings and predictions</div>
+            <div class="project-metric"><strong>Healthcare</strong>Risk profiles and classifications</div>
+            <div class="project-metric"><strong>Computer Vision / MNIST</strong>Digit-confidence decisions</div>
+            <div class="project-metric"><strong>Reinforcement Learning</strong>Optimal policies</div>
+          </div>
+          <h4>Focus</h4>
+          <blockquote><strong>Turning model outputs into information that people can understand and use.</strong></blockquote>
+          <h4>Technologies</h4>
+          <p><strong>Python - Scikit-learn - Machine Learning - Reinforcement Learning - Jupyter Notebook</strong></p>
+          <div class="project-links">
+            <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#">View Case Study</a>
+          </div>
+        </article>
+
+        <hr />
+
+        <article class="card">
+          <h3>04 - Machine Learning Analysis</h3>
+          <h4><strong>Housing Price Prediction &amp; Iris Classification</strong></h4>
+          <p><strong>Machine Learning - Data Science - Predictive Modeling</strong></p>
+          <p>A comparative machine-learning analysis applying supervised and unsupervised learning techniques to housing and Iris datasets.</p>
+          <h4>What I Built</h4>
+          <ul>
+            <li>Developed Linear Regression for housing-price prediction.</li>
+            <li>Developed KNN for Iris classification.</li>
+            <li>Applied PCA for dimensionality reduction.</li>
+            <li>Applied K-Means clustering.</li>
+            <li>Performed missing-value handling.</li>
+            <li>Detected outliers using the IQR method.</li>
+            <li>Applied feature scaling.</li>
+            <li>Performed train/test splitting.</li>
+            <li>Evaluated models using R&sup2;, MSE, accuracy, confusion matrices, and silhouette scores.</li>
+            <li>Created visualizations to communicate patterns and model performance.</li>
+          </ul>
+          <h4>Technologies</h4>
+          <p><strong>Python - Scikit-learn - Pandas - NumPy - Matplotlib - Jupyter Notebook</strong></p>
+          <div class="project-links">
+            <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="#">View Case Study</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="earlier-engineering-projects">
+        <p class="label">Earlier Engineering Projects</p>
+        <h2>Earlier Engineering Projects</h2>
+
+        <article class="card">
+          <h3><strong>GLO-SEC</strong></h3>
+          <h4>Laptop Security &amp; Anti-Theft System</h4>
+          <p><strong>Bachelor's Degree Project - Bahir Dar University</strong></p>
+          <p>GLO-SEC was designed to address laptop theft, ownership verification, and device recovery through a QR-based identification system.</p>
+          <h4>Key Contributions</h4>
+          <ul>
+            <li>Designed a laptop registration system connecting devices with verified ownership information.</li>
+            <li>Generated unique QR codes for registered laptops.</li>
+            <li>Developed a QR-based ownership verification workflow.</li>
+            <li>Connected physical laptop identification with digital ownership records.</li>
+            <li>Applied database management and system design principles.</li>
+            <li>Designed the system around a practical security and recovery problem.</li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article class="card">
+          <h3>Digital ID &amp; Campus Access Control</h3>
+          <h4><strong>Digital Student Identification &amp; Campus Access System</strong></h4>
+          <p><strong>Software Engineering Internship - Bahir Dar University</strong></p>
+          <p>Developed a desktop-based digital identification and campus access-control system to improve student verification and campus service management.</p>
+          <h4>Key Contributions</h4>
+          <ul>
+            <li>Designed a centralized student registration system.</li>
+            <li>Developed barcode-enabled digital identification.</li>
+            <li>Integrated barcode scanning for campus entry verification.</li>
+            <li>Implemented validation for registered and invalid IDs.</li>
+            <li>Integrated cafeteria eligibility information into student records.</li>
+            <li>Consolidated campus identification and cafeteria eligibility into a single system.</li>
+            <li>Applied database management, desktop application development, system design, data validation, and access-control principles.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="what-i-build">
+        <p class="label">What I Build</p>
+        <h2>What I Build</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Engineering Software</h3>
+            <p>Designing and developing reliable applications based on real requirements, system constraints, and practical use cases.</p>
           </article>
-          <article>
-            <h3>Data and Modeling</h3>
-            <p>
-              Predictive Modeling, Feature Engineering, Data Preprocessing,
-              Data Analysis
-            </p>
+          <article class="card">
+            <h3>Intelligent Systems</h3>
+            <p>Building machine-learning systems that transform data into predictions, classifications, rankings, policies, and decisions.</p>
           </article>
-          <article>
-            <h3>Evaluation and Analytics</h3>
-            <p>
-              Model Evaluation, A/B Testing, Time Series Analysis
-            </p>
+          <article class="card">
+            <h3>Computer Vision</h3>
+            <p>Developing deep-learning systems capable of detecting and interpreting objects and information within visual data.</p>
           </article>
-          <article>
-            <h3>Data Engineering and Backend</h3>
-            <p>
-              Data Pipelines, ETL Processes, Database Management Systems,
-              REST APIs, Docker
-            </p>
+          <article class="card">
+            <h3>Data-Driven Solutions</h3>
+            <p>Using data analysis and machine learning to identify patterns, evaluate outcomes, and support better decisions.</p>
           </article>
-          <article>
-            <h3>MLOps and Delivery</h3>
-            <p>
-              Data Governance, Cloud Data Warehousing, CI/CD Pipelines,
-              Model Deployment, Feature Store Management
-            </p>
+          <article class="card">
+            <h3>Software Quality</h3>
+            <p>Exploring machine-learning approaches that improve testing efficiency and help software teams focus testing resources where they provide the most value.</p>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="section container reveal">
-        <p class="section-label">Experience</p>
+      <section class="section" id="how-i-approach-engineering">
+        <p class="label">How I Approach Engineering</p>
+        <h2>How I Approach Engineering</h2>
+        <div class="grid-2">
+          <article class="card"><h3>01 - Understand</h3><p>Define the problem, requirements, users, data, and constraints before selecting a technical solution.</p></article>
+          <article class="card"><h3>02 - Design</h3><p>Translate requirements into system architectures, workflows, algorithms, and implementation strategies.</p></article>
+          <article class="card"><h3>03 - Build</h3><p>Develop modular and maintainable software using appropriate engineering and AI/ML technologies.</p></article>
+          <article class="card"><h3>04 - Evaluate</h3><p>Measure system performance using meaningful metrics and compare results against appropriate baselines.</p></article>
+          <article class="card"><h3>05 - Improve</h3><p>Analyze limitations, identify opportunities for improvement, and iterate toward a stronger solution.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="project-development-philosophy">
+        <p class="label">Project Development Philosophy</p>
+        <h2><strong>From Idea to Working System</strong></h2>
+        <p>Every project follows a similar engineering process:</p>
+        <blockquote>
+          <strong>Problem</strong><br />
+          ↓<br /><br />
+          <strong>Requirements</strong><br />
+          ↓<br /><br />
+          <strong>System Design</strong><br />
+          ↓<br /><br />
+          <strong>Implementation</strong><br />
+          ↓<br /><br />
+          <strong>Testing &amp; Evaluation</strong><br />
+          ↓<br /><br />
+          <strong>Results</strong><br />
+          ↓<br /><br />
+          <strong>Iteration</strong>
+        </blockquote>
+        <p>This is important because your portfolio should demonstrate that you understand <strong>the engineering process</strong>, not just individual technologies.</p>
+      </section>
+
+      <section class="section" id="about">
+        <p class="label">About</p>
+        <h2>About Me</h2>
+        <p>I am a <strong>Software Engineer and M.S. Computer Science candidate</strong> with a background in software development, artificial intelligence, machine learning, computer vision, data science, and software testing.</p>
+        <p>I am currently pursuing my <strong>Master of Science in Computer Science at the University of the District of Columbia</strong>, with an expected graduation in December 2026 and a <strong>4.00/4.00 GPA</strong>.</p>
+        <p>My work sits at the intersection of <strong>software engineering and intelligent systems</strong>. I am interested in building technology that does more than demonstrate an algorithm-I focus on developing systems that can process information, produce meaningful results, support decisions, and address practical problems.</p>
+        <p>During my graduate studies, I have developed projects involving <strong>transformer-based computer vision, machine learning, reinforcement learning, predictive modeling, clustering, AI decision support, and machine-learning-based software testing</strong>.</p>
+        <p>My featured work includes <strong>CCT-YOLO</strong>, a lightweight transformer-enhanced object detection system; <strong>Adaptive Learning-Based Mutation Prioritization</strong>, which applies machine learning to improve mutation-testing efficiency; and an <strong>AI Decision Extraction &amp; Decision-Support System</strong> that transforms model outputs into interpretable, decision-oriented results.</p>
+        <p>My earlier software engineering work includes professional software development at <strong>Kimiya Telecom</strong> and a software engineering internship at <strong>Bahir Dar University</strong>, where I developed systems addressing practical problems in campus identification, access control, student information management, and laptop security.</p>
+        <p>I approach engineering as an iterative process:</p>
+        <blockquote><strong>Understand the problem → Design the system → Build the solution → Evaluate the results → Improve the system</strong></blockquote>
+        <p>As I complete my master's degree, I am preparing to contribute to professional teams working in <strong>software engineering, AI/ML, computer vision, data engineering, and intelligent software systems</strong>.</p>
+      </section>
+
+      <section class="section" id="experience">
+        <p class="label">Experience</p>
         <h2>Professional Experience</h2>
-        <div class="timeline">
-          <article>
-            <h3>AI, Data Science, and Machine Learning Researcher</h3>
-            <p class="timeline-meta">University of the District of Columbia | Washington, DC | 01/2025 - Current</p>
-            <ul class="experience-list">
-              <li>Developed machine learning models for predictive analytics and classification tasks using diverse datasets.</li>
-              <li>Designed and iterated machine learning approaches to improve predictive accuracy in academic research settings.</li>
-              <li>Executed data preprocessing and feature engineering pipelines, ensuring high-quality inputs for effective model training and evaluation.</li>
-              <li>Researched and assessed various machine learning algorithms to develop effective solutions for complex technical issues.</li>
-              <li>Leveraged Python and TensorFlow for analysis of large datasets, supporting informed decision-making for faculty initiatives.</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Concierge</h3>
-            <p class="timeline-meta">A-Class Concierge | 06/2024 - Current</p>
-            <ul class="experience-list">
-              <li>Streamlined daily operations by coordinating visitor requests and maintaining clear communication with stakeholders in a fast-paced environment.</li>
-              <li>Coordinated reservations and transportation logistics to ensure efficient, high-quality client service.</li>
-              <li>Maintained operational records and resolved service requests while managing multiple priorities with professionalism and accuracy.</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Software Developer</h3>
-            <p class="timeline-meta">Kimiya Telecom | 09/2022 - 06/2023</p>
-            <ul class="experience-list">
-              <li>Built and maintained scalable software features using JavaScript frameworks and RESTful APIs.</li>
-              <li>Collaborated with cross-functional teams to translate requirements into maintainable software solutions.</li>
-              <li>Diagnosed and resolved software defects to improve system efficiency, reliability, and application stability.</li>
-            </ul>
-          </article>
+        <article class="card">
+          <h3>Software Developer</h3>
+          <p><strong>Kimiya Telecom</strong></p>
+          <p>September 2022 - July 2023</p>
+          <p>Addis Ababa, Ethiopia</p>
+          <p>Worked as a Software Developer contributing to the development and maintenance of software solutions while collaborating with team members to understand requirements and deliver practical applications.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Developed and maintained software features based on business and user requirements.</li>
+            <li>Applied software engineering principles throughout the development lifecycle.</li>
+            <li>Worked with databases and backend functionality.</li>
+            <li>Troubleshot software issues and improved existing functionality.</li>
+            <li>Collaborated with team members to implement and test software solutions.</li>
+            <li>Participated in requirements understanding, implementation, testing, and maintenance.</li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article class="card">
+          <h3>Software Engineer Intern</h3>
+          <p><strong>Bahir Dar Institute of Technology, Bahir Dar University</strong></p>
+          <p>March 2021 - August 2021</p>
+          <p>Bahir Dar, Ethiopia</p>
+          <p>Worked on software solutions focused on campus identification, access control, and student information management.</p>
+          <h4>Key Project</h4>
+          <p><strong>Digital ID &amp; Campus Access Control System</strong></p>
+          <p>Designed and developed a desktop-based system using barcode-enabled identification to improve campus security and streamline student verification.</p>
+        </article>
+
+        <hr />
+
+        <article class="card">
+          <h3>Concierge</h3>
+          <p><strong>A-CLASS Concierge Services LLC</strong></p>
+          <p>June 2024 - Present</p>
+          <p>Washington, DC</p>
+          <p>Provide professional customer service and operational support in an on-site environment.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Assist residents, visitors, and clients with day-to-day requests.</li>
+            <li>Communicate professionally with residents, coworkers, and management.</li>
+            <li>Respond to customer concerns and routine issues.</li>
+            <li>Manage multiple responsibilities while maintaining reliability and organization.</li>
+            <li>Maintain a professional and welcoming environment.</li>
+          </ul>
+          <h4>Portfolio positioning</h4>
+          <p>This role demonstrates <strong>professional communication, reliability, customer service, and responsibility</strong> while your technical roles demonstrate your engineering experience.</p>
+        </article>
+      </section>
+
+      <section class="section" id="education">
+        <p class="label">Education</p>
+        <article class="card">
+          <h3>University of the District of Columbia</h3>
+          <p><strong>Master of Science in Computer Science</strong></p>
+          <p><strong>January 2025 - December 2026 · Expected</strong></p>
+          <p><strong>GPA: 4.00/4.00</strong></p>
+          <h4>Areas of Study</h4>
+          <ul>
+            <li>Advanced Software Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Machine Learning</li>
+            <li>Data Science</li>
+            <li>Data Engineering</li>
+            <li>Quantum Computing</li>
+          </ul>
+          <h4>Selected Graduate Projects</h4>
+          <ul>
+            <li>AI Decision Extraction &amp; Decision-Support System</li>
+            <li>Adaptive Learning-Based Mutation Prioritization</li>
+            <li>CCT-YOLO Transformer-Enhanced Object Detection</li>
+            <li>Housing Price Prediction &amp; Iris Classification</li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article class="card">
+          <h3>Bahir Dar University</h3>
+          <p><strong>Bachelor of Science in Software Engineering</strong></p>
+          <p><strong>October 2017 - August 2022</strong></p>
+          <p><strong>GPA: 3.32/4.00</strong></p>
+          <h4>Foundation</h4>
+          <ul>
+            <li>Software Engineering</li>
+            <li>Application Development</li>
+            <li>Database Systems</li>
+            <li>System Design</li>
+            <li>Programming</li>
+            <li>Software Development</li>
+            <li>Problem Solving</li>
+          </ul>
+          <h4>Selected Projects</h4>
+          <ul>
+            <li>GLO-SEC Laptop Security &amp; Anti-Theft System</li>
+            <li>Digital ID &amp; Campus Access Control System</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="skills">
+        <p class="label">Technical Skills</p>
+        <h2>Technical Skills</h2>
+        <article class="card"><h3>Software Engineering</h3><p><strong>Python - Java - REST APIs - Backend Development - Database Systems - Software Design - Application Development - Software Testing</strong></p></article>
+        <article class="card"><h3>Artificial Intelligence &amp; Machine Learning</h3><p><strong>Machine Learning - Deep Learning - Neural Networks - Reinforcement Learning - Supervised Learning - Unsupervised Learning - Model Evaluation</strong></p></article>
+        <article class="card"><h3>Computer Vision</h3><p><strong>YOLO - Object Detection - Transformers - CCT - Image Processing - Deep Learning - Computer Vision Pipelines</strong></p></article>
+        <article class="card"><h3>Data Science</h3><p><strong>Pandas - NumPy - Scikit-learn - Predictive Modeling - PCA - K-Means - Feature Engineering - Data Preprocessing - Data Visualization</strong></p></article>
+        <article class="card"><h3>Software Quality</h3><p><strong>Mutation Testing - ML-Based Test Prioritization - Benchmarking - Testing Evaluation - Software Quality Analysis</strong></p></article>
+        <article class="card"><h3>Development Tools</h3><p><strong>Git - GitHub - Jupyter Notebook - PyTorch - Scikit-learn</strong></p></article>
+      </section>
+
+      <section class="section" id="current-focus">
+        <p class="label">Current Focus</p>
+        <h2><strong>Currently Exploring</strong></h2>
+        <p>As I complete my M.S. in Computer Science, I am continuing to deepen my knowledge in:</p>
+        <div class="flow">
+          <span><strong>Artificial Intelligence</strong></span>
+          <span><strong>Machine Learning</strong></span>
+          <span><strong>Computer Vision</strong></span>
+          <span><strong>Vision-Language Models</strong></span>
+          <span><strong>Large Language Models</strong></span>
+          <span><strong>AI Reasoning Systems</strong></span>
+          <span><strong>Data Engineering</strong></span>
+          <span><strong>Advanced Software Engineering</strong></span>
+          <span><strong>Quantum Computing</strong></span>
         </div>
       </section>
 
-      <section id="education" class="section container reveal">
-        <p class="section-label">Education</p>
-        <h2>Education</h2>
-        <div class="cards education-cards">
-          <article class="card">
-            <h3>M.S. Computer Science</h3>
-            <p class="card-meta">University of the District of Columbia &middot; Washington, DC</p>
-            <p><strong>Expected 12/2026</strong></p>
-            <p><strong>GPA:</strong> 4.00 / 4.00</p>
-            <ul class="experience-list">
-              <li>National Society of Leadership and Success (NSLS) Member.</li>
-              <li>Research Project: CCT-YOLO: Compact Convolutional Transformer for Real-Time Object Detection.</li>
-              <li>Research Project: Machine Learning Pipeline for Predictive Analytics.</li>
-              <li>Research Project: Housing Price Prediction Model.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>B.S. Software Engineering</h3>
-            <p class="card-meta">Bahir Dar University Institute of Technology &middot; Bahir Dar, Ethiopia</p>
-            <p><strong>08/2022</strong></p>
-            <p><strong>GPA:</strong> 3.32 / 4.00</p>
-            <ul class="experience-list">
-              <li>Research Project: Digital ID Card System (Internship Project).</li>
-              <li>Capstone Project: GLO-SEC: Laptop Security and Anti-Theft System, Project Manager.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Certification</h3>
-            <p class="card-meta">Microsoft SQL Server DBA &amp; Power BI Professional Program</p>
-            <p>Baro Technologies &middot; October - December 2023</p>
-          </article>
+      <section class="section" id="future-direction">
+        <p class="label">Future Direction</p>
+        <h2><strong>Building Toward Intelligent Software Systems</strong></h2>
+        <p>My long-term interest is at the intersection of <strong>software engineering and artificial intelligence</strong>.</p>
+        <p>I want to build systems where software engineering provides the foundation for reliable applications while AI and machine learning provide the ability to understand data, recognize patterns, make predictions, and support decisions.</p>
+        <h4>Areas of Professional Interest</h4>
+        <div class="grid-2">
+          <article class="card"><h3>Software Engineer</h3><p>Building reliable and maintainable software applications.</p></article>
+          <article class="card"><h3>AI Engineer</h3><p>Integrating artificial intelligence into practical software systems.</p></article>
+          <article class="card"><h3>Machine Learning Engineer</h3><p>Developing, evaluating, and deploying machine-learning solutions.</p></article>
+          <article class="card"><h3>Computer Vision Engineer</h3><p>Building systems that understand and process visual information.</p></article>
+          <article class="card"><h3>Data Engineer</h3><p>Designing reliable data pipelines and infrastructure that support intelligent applications.</p></article>
         </div>
       </section>
 
-      <section id="contact" class="section container reveal">
-        <p class="section-label">Contact</p>
-        <h2>Let&apos;s build impactful systems together.</h2>
-        <div class="contact-grid">
-          <article class="contact-card">
-            <p><strong>Location:</strong> Washington, DC 20011</p>
-            <p><strong>Phone:</strong> <a href="tel:2029617071">202.961.7071</a></p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:kalkidandebassu@gmail.com">kalkidandebassu@gmail.com</a>
-            </p>
-          </article>
+      <section class="section" id="research-engineering">
+        <p class="label">Research &amp; Engineering</p>
+        <h2><strong>Beyond the Model</strong></h2>
+        <p>I approach AI development as a <strong>software engineering problem</strong>, not simply a model-training exercise.</p>
+        <p>A successful intelligent system requires more than a trained model.</p>
+        <p>It requires:</p>
+        <blockquote>
+          <strong>Data</strong><br />
+          → <strong>Processing</strong><br />
+          → <strong>Model</strong><br />
+          → <strong>Evaluation</strong><br />
+          → <strong>Interpretation</strong><br />
+          → <strong>Decision</strong><br />
+          → <strong>Application</strong>
+        </blockquote>
+        <p>My projects explore this broader perspective by connecting machine-learning algorithms with software engineering, evaluation, interpretability, and practical decision-making.</p>
+      </section>
 
-          <form id="contact-form" class="contact-form" novalidate>
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+      <section class="section" id="graduate-project-2026">
+        <p class="label">2026 Graduate Project</p>
+        <p>When your master's project is ready, I recommend adding this as a major portfolio project.</p>
+        <h2><strong>AI-Based Image Understanding &amp; Context-Aware Reasoning System</strong></h2>
+        <p><strong>Artificial Intelligence - Computer Vision - Vision-Language Models - LLMs</strong></p>
+        <p>A practical intelligent system designed to analyze images, understand objects and activities, reason about relationships and context, and provide natural-language explanations.</p>
+        <h4>Proposed Pipeline</h4>
+        <blockquote>
+          <strong>Image Upload</strong><br />
+          ↓<br /><br />
+          <strong>Object &amp; Activity Detection</strong><br />
+          ↓<br /><br />
+          <strong>Visual Representation</strong><br />
+          ↓<br /><br />
+          <strong>Vision-Language Understanding</strong><br />
+          ↓<br /><br />
+          <strong>Context &amp; Relationship Analysis</strong><br />
+          ↓<br /><br />
+          <strong>LLM-Based Reasoning</strong><br />
+          ↓<br /><br />
+          <strong>Situation / Risk Assessment</strong><br />
+          ↓<br /><br />
+          <strong>Natural-Language Explanation</strong>
+        </blockquote>
+        <p>This could eventually become your <strong>most advanced portfolio project</strong> because it demonstrates the progression from computer vision into multimodal AI and reasoning.</p>
+      </section>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
+      <section class="section" id="certification">
+        <p class="label">Certification</p>
+        <h2>Artificial Intelligence Foundations: Neural Networks</h2>
+        <p><strong>LinkedIn Learning - September 2026</strong></p>
+        <p>Credential available through LinkedIn Learning.</p>
+        <p><a href="https://www.linkedin.com/learning/certificates/7458f18fa1ec8f5e77d73f41052f8105dd2a60aee74009bfaef0a4f219f10f53?trk=share_certificate">View Credential</a></p>
+        <p>I would keep this section intentionally short. Your <strong>M.S., professional experience, and substantial projects</strong> should carry more weight than a long certificate list.</p>
+      </section>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+      <section class="section" id="professional-strengths">
+        <p class="label">Professional Strengths</p>
+        <article class="card"><h3><strong>Engineering Mindset</strong></h3><p>Problem solving - System thinking - Analytical reasoning - Continuous learning</p></article>
+        <article class="card"><h3><strong>Technical Communication</strong></h3><p>Technical documentation - Project presentation - Explaining complex concepts - Collaboration</p></article>
+        <article class="card"><h3><strong>Development</strong></h3><p>Software design - Implementation - Testing - Debugging - Evaluation - Iteration</p></article>
+        <article class="card"><h3><strong>AI/ML</strong></h3><p>Model development - Data analysis - Model evaluation - Computer vision - Intelligent decision systems</p></article>
+      </section>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <p id="form-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
+      <section class="section" id="professional-statement">
+        <p class="label">Professional Statement</p>
+        <h2><strong>What I Bring</strong></h2>
+        <p>I bring together a foundation in <strong>software engineering</strong> with graduate-level experience in <strong>artificial intelligence, machine learning, computer vision, data science, and software testing</strong>.</p>
+        <p>My goal is not simply to use advanced technologies, but to understand how they can be engineered into <strong>reliable, maintainable, measurable, and useful software systems</strong>.</p>
+      </section>
+
+      <section class="section" id="contact">
+        <p class="label">Contact</p>
+        <h2>Let's Build Something Useful</h2>
+        <p>I am interested in opportunities involving <strong>software engineering, artificial intelligence, machine learning, computer vision, data engineering, and intelligent software systems</strong>.</p>
+        <p>I am particularly interested in teams where I can contribute to meaningful technical problems, apply strong software engineering fundamentals, and continue growing as an engineer.</p>
+        <p><strong>Kalkidan Debassu</strong></p>
+        <p><strong>Software Engineer | AI &amp; Machine Learning | Computer Vision</strong></p>
+        <p>Washington, DC 20011</p>
+        <p><strong>Email:</strong> <a href="mailto:kalinamulugeta0817@gmail.com">kalinamulugeta0817@gmail.com</a></p>
+        <p><strong>Phone:</strong> (202) 961-7071</p>
+        <p><a href="https://www.linkedin.com/in/kalkidandebassu/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p><a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p><span id="year"></span> Kalkidan Debassu</p>
-        <div class="footer-links">
-          <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </div>
+    <footer>
+      <p><strong>Kalkidan Debassu</strong></p>
+      <p>Software Engineer - AI &amp; Machine Learning - Computer Vision</p>
+      <p>&copy; 2026 Kalkidan Debassu</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
