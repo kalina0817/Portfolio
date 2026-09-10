@@ -180,12 +180,34 @@
 
       .results {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
         gap: 10px;
         margin-top: 10px;
+        align-items: stretch;
       }
 
-      .result, .project-metric {
+      .result {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: #f8fbf8;
+        padding: 12px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        min-height: 92px;
+        line-height: 1.35;
+      }
+
+      .result strong {
+        display: block;
+        color: var(--accent);
+        font-size: 1.15rem;
+        margin-bottom: 2px;
+      }
+
+      .project-metric {
         border: 1px solid var(--line);
         border-radius: 10px;
         background: #f8fbf8;
@@ -193,7 +215,7 @@
         text-align: center;
       }
 
-      .result strong, .project-metric strong {
+      .project-metric strong {
         display: block;
         color: var(--accent);
         font-size: 1.15rem;
