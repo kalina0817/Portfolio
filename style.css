@@ -402,6 +402,52 @@ blockquote {
   color: #5f3e2f;
 }
 
+.project-details {
+  margin-top: var(--space-3);
+  border: 1px solid #ead4b6;
+  border-radius: 12px;
+  background: #fff9ef;
+  overflow: clip;
+}
+
+.project-details summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 14px;
+  font-weight: 700;
+  color: #3f2c1f;
+  position: relative;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary::after {
+  content: "+";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #82523f;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.project-details[open] summary {
+  border-bottom: 1px solid #ead4b6;
+  background: #fff2e3;
+}
+
+.project-details[open] summary::after {
+  content: "-";
+}
+
+.project-details ul {
+  margin: 0;
+  padding: 12px 16px 14px 32px;
+}
+
 .section-projects .card.featured {
   border: 2px solid #cc7d5e;
   background: linear-gradient(160deg, #fff6ec 0%, #fffdf7 100%);
