@@ -6,7 +6,7 @@
   --panel: #ffffff;
   --panel-strong: #ffffff;
   --text: #202124;
-  --muted: #3c4043;
+  --muted: #2f3337;
   --line: #dadce0;
   --line-strong: #c5c8cc;
   --accent: #1a0dab;
@@ -268,7 +268,7 @@ main {
   border-radius: 0;
   box-shadow: none;
   margin-top: 0;
-  padding: 20px 4px 22px;
+  padding: 22px 4px 26px;
 }
 
 .serp-results .section:hover {
@@ -277,7 +277,21 @@ main {
 }
 
 .serp-results .section:first-child {
-  padding-top: 14px;
+  padding-top: 16px;
+}
+
+.serp-results .section > h2,
+.serp-results .section > h3,
+.serp-results .section > h4 {
+  margin-top: 10px;
+}
+
+.serp-results .section > p,
+.serp-results .section > ul,
+.serp-results .section > .card,
+.serp-results .section > .grid-2,
+.serp-results .section > .results {
+  margin-top: 12px;
 }
 
 .serp-panel {
@@ -311,7 +325,7 @@ main {
 
 .serp-panel .section > p,
 .serp-panel .section > ul {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .serp-panel .card {
@@ -377,7 +391,7 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.2;
+  line-height: 1.26;
   margin: var(--space-2) 0 0;
   color: var(--text);
 }
