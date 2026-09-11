@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCT-YOLO Case Study | Kalkidan Debassu</title>
+    <meta name="description" content="Case study for CCT-YOLO: transformer-enhanced real-time object detection with compact model design." />
+    <style>
+      :root {
+        --bg: #f8f3ea;
+        --panel: #fffaf2;
+        --text: #201912;
+        --muted: #675a4e;
+        --line: #dfcfb5;
+        --accent: #aa4b2f;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        color: var(--text);
+        background: linear-gradient(165deg, var(--bg) 0%, #fbf6ee 100%);
+        line-height: 1.65;
+      }
+
+      .wrap {
+        width: min(960px, 92vw);
+        margin: 28px auto;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--panel);
+        padding: 22px;
+      }
+
+      h1, h2 {
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: clamp(1.5rem, 3vw, 2.2rem);
+      }
+
+      h2 {
+        margin-top: 18px;
+        font-size: 1.15rem;
+      }
+
+      p, ul {
+        margin: 10px 0 0;
+        color: var(--muted);
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 12px;
+        background: #fffef9;
+      }
+
+      th, td {
+        border: 1px solid #eadbc4;
+        padding: 9px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: #f8e9d7;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-top: 10px;
+        background: #f6ddcd;
+        color: #5b2f1d;
+        border-radius: 999px;
+        padding: 5px 10px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <article class="panel">
+        <h1>CCT-YOLO Case Study</h1>
+        <p class="badge">Aug 2025 - Dec 2025</p>
+        <p>
+          CCT-YOLO explores whether a compact transformer-based backbone can reduce
+          object-detection model complexity while preserving practical performance.
+        </p>
+
+        <h2>Problem Statement</h2>
+        <p>
+          Real-time object detection often requires a tradeoff between model
+          efficiency and detection quality. This work investigates a lightweight
+          architecture path for deployment-oriented use cases.
+        </p>
+
+        <h2>Method</h2>
+        <ul>
+          <li>Replaced a conventional YOLO backbone with a Compact Convolutional Transformer backbone.</li>
+          <li>Integrated the custom backbone with a YOLO detection head.</li>
+          <li>Built a full training and evaluation pipeline in Python and PyTorch.</li>
+        </ul>
+
+        <h2>Experimental Setup</h2>
+        <ul>
+          <li>Dataset: Pascal VOC 2012 (20 classes)</li>
+          <li>Training duration: 25 epochs</li>
+          <li>Evaluation metric: mAP@0.5</li>
+          <li>Artifacts: architecture diagram, detection outputs, and reproducible code in repository</li>
+        </ul>
+
+        <h2>Baseline vs Proposed</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Reference Baseline</th>
+              <th>CCT-YOLO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Parameter footprint</td>
+              <td>100% reference</td>
+              <td>2.2% of baseline (97.8% reduction)</td>
+            </tr>
+            <tr>
+              <td>Model size</td>
+              <td>Larger baseline footprint</td>
+              <td>5.22 MB</td>
+            </tr>
+            <tr>
+              <td>mAP@0.5</td>
+              <td>Reference detector benchmark</td>
+              <td>21.88%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Key Takeaway</h2>
+        <p>
+          The project demonstrates strong compactness gains and a practical path
+          for efficiency-focused detector research, with clear opportunities to
+          improve mAP through further training and optimization.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

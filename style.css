@@ -407,6 +407,14 @@ blockquote {
   max-width: 78ch;
 }
 
+#research-identity .card ul {
+  margin-top: 10px;
+}
+
+#research-identity .card p {
+  margin-top: 10px;
+}
+
 .table-wrap {
   margin-top: var(--space-3);
   overflow-x: auto;
@@ -541,6 +549,12 @@ blockquote {
   color: var(--accent-dark);
   font-weight: 700;
   text-underline-offset: 3px;
+}
+
+#contact .btn {
+  display: inline-flex;
+  text-decoration: none;
+  color: #3a271c;
 }
 
 .project-visual {
