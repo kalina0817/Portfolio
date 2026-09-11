@@ -152,9 +152,9 @@ nav a.active {
 a:focus-visible,
 .btn:focus-visible,
 .menu-toggle:focus-visible {
-  outline: 3px solid rgba(26, 115, 232, 0.32);
-  outline-offset: 2px;
-  border-radius: 10px;
+  outline: 2px solid #1a73e8;
+  outline-offset: 1px;
+  border-radius: 8px;
 }
 
 main {
