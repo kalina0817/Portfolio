@@ -14,309 +14,27 @@
     <meta property="og:title" content="Kalkidan Debassu - Professional Portfolio" />
     <meta property="og:description" content="Software Engineer with graduate-level expertise in AI/ML building practical intelligent systems." />
     <meta property="og:url" content="https://kalina0817.github.io/Portfolio/" />
-    <meta property="og:image" content="https://kalina0817.github.io/Portfolio/assets/Profile_Photo.JPG" />
+    <meta property="og:image" content="https://kalina0817.github.io/Portfolio/assets/social-preview.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Kalkidan Debassu - Professional Portfolio" />
     <meta name="twitter:description" content="Software Engineer with graduate-level expertise in AI/ML building practical intelligent systems." />
-    <meta name="twitter:image" content="https://kalina0817.github.io/Portfolio/assets/Profile_Photo.JPG" />
-    <style>
-      :root {
-        --bg: #f5f7f4;
-        --panel: #ffffff;
-        --text: #112018;
-        --muted: #496054;
-        --line: #d7e2d9;
-        --accent: #1f5a46;
-      }
-
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-
-      body {
-        margin: 0;
-        background:
-          radial-gradient(circle at 90% 0%, rgba(31, 90, 70, 0.08), transparent 35%),
-          radial-gradient(circle at 0% 100%, rgba(67, 90, 160, 0.06), transparent 35%),
-          var(--bg);
-        color: var(--text);
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-      }
-
-      .wrap {
-        width: min(1020px, 94vw);
-        margin: 0 auto;
-      }
-
-      .topbar {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        background: rgba(245, 247, 244, 0.95);
-        backdrop-filter: blur(6px);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .topbar .wrap {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 0;
-      }
-
-      .brand {
-        font-weight: 800;
-        color: var(--accent);
-        text-decoration: none;
-      }
-
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      nav a {
-        color: var(--text);
-        text-decoration: none;
-        font-weight: 700;
-      }
-
-      nav a:hover { color: var(--accent); }
-
-      main { padding: 20px 0 40px; }
-
-      .section {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        padding: 18px;
-        margin-top: 14px;
-      }
-
-      .label {
-        margin: 0;
-        color: var(--muted);
-        font-size: 0.86rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        font-weight: 700;
-      }
-
-      h1, h2, h3, h4 { line-height: 1.3; margin: 8px 0; }
-      h1 { font-size: clamp(1.4rem, 3vw, 2rem); }
-      h2 { font-size: clamp(1.2rem, 2.6vw, 1.6rem); }
-      h3 { font-size: clamp(1.06rem, 2.2vw, 1.25rem); }
-      h4 { font-size: 1rem; }
-
-      p { color: var(--muted); margin: 10px 0 0; }
-      ul { margin: 8px 0 0; color: var(--muted); }
-      hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
-
-      blockquote {
-        margin: 12px 0 0;
-        border-left: 4px solid var(--accent);
-        padding: 10px 12px;
-        background: #f7fbf8;
-        color: #29463a;
-        font-weight: 600;
-      }
-
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 14px;
-      }
-
-      .btn {
-        text-decoration: none;
-        border: 1px solid #244a3b;
-        border-radius: 10px;
-        padding: 9px 12px;
-        font-weight: 700;
-        color: #1a372c;
-        background: #fff;
-      }
-
-      .btn.primary {
-        background: #244a3b;
-        color: #fff;
-      }
-
-      .grid-2 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-      .card {
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 12px;
-        background: #f9fcf9;
-      }
-
-      #projects .card {
-        padding: 18px;
-        margin-top: 14px;
-        border-radius: 14px;
-        background: #fdfefd;
-        content-visibility: auto;
-        contain-intrinsic-size: 700px;
-      }
-
-      #projects .card.featured {
-        position: relative;
-        padding: 24px;
-        border: 2px solid var(--accent);
-        background: linear-gradient(160deg, #f8fff9 0%, #f3faf5 100%);
-        box-shadow: 0 14px 34px rgba(31, 90, 70, 0.18);
-      }
-
-      #projects .card.featured::before {
-        content: "Featured";
-        position: absolute;
-        top: -12px;
-        right: 14px;
-        background: var(--accent);
-        color: #fff;
-        font-size: 0.75rem;
-        font-weight: 800;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        padding: 4px 9px;
-        border-radius: 999px;
-      }
-
-      .results {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        gap: 10px;
-        margin-top: 10px;
-        align-items: stretch;
-      }
-
-      .result {
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        background: #f8fbf8;
-        padding: 12px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 4px;
-        min-height: 92px;
-        line-height: 1.35;
-      }
-
-      .result strong {
-        display: block;
-        color: var(--accent);
-        font-size: 1.15rem;
-        margin-bottom: 2px;
-      }
-
-      .project-metric {
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        background: #f8fbf8;
-        padding: 12px;
-        text-align: center;
-      }
-
-      .project-metric strong {
-        display: block;
-        color: var(--accent);
-        font-size: 1.15rem;
-      }
-
-      .project-metrics {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-      .project-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-      .project-visual {
-        margin-top: 12px;
-      }
-
-      .project-visual img {
-        width: 100%;
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        background: #fff;
-        display: block;
-      }
-
-      .visual-grid .project-visual img {
-        height: 220px;
-        object-fit: contain;
-      }
-
-      .project-visual figcaption {
-        margin-top: 6px;
-        color: var(--muted);
-        font-size: 0.9rem;
-      }
-
-      .visual-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-      .visual-placeholder {
-        border: 1px dashed #8aa596;
-        border-radius: 10px;
-        background: #f8fbf9;
-        padding: 14px;
-        text-align: center;
-        color: #3f5b4e;
-        font-size: 0.9rem;
-      }
-
-      .flow {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 10px;
-        color: var(--muted);
-        font-weight: 700;
-      }
-
-      footer {
-        text-align: center;
-        color: var(--muted);
-        padding: 8px 0 24px;
-      }
-
-      @media (max-width: 640px) {
-        .visual-grid .project-visual img {
-          height: 180px;
-        }
-      }
-    </style>
+    <meta name="twitter:image" content="https://kalina0817.github.io/Portfolio/assets/social-preview.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="topbar">
       <div class="wrap">
         <a class="brand" href="#home">Kalkidan Debassu</a>
-        <nav aria-label="Main navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+          Menu
+        </button>
+        <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
           <a href="#home">Home</a>
-          <a href="#about">About</a>
+          <a href="#at-a-glance">About</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
@@ -326,11 +44,11 @@
       </div>
     </header>
 
-    <main class="wrap">
+    <main class="wrap" id="main-content">
       <section class="section" id="home">
         <p class="label">Home</p>
-        <h2>Kalkidan Debassu</h2>
-        <h1>Software Engineer | AI &amp; Machine Learning | Computer Vision</h1>
+        <h1>Kalkidan Debassu</h1>
+        <h2>Software Engineer | AI &amp; Machine Learning | Computer Vision</h2>
         <blockquote>
           <strong>Software engineer with professional development experience and graduate-level expertise in artificial intelligence, machine learning, and computer vision. I build practical software and intelligent systems that combine strong engineering foundations with data-driven methods, measurable evaluation, and real-world problem solving.</strong>
         </blockquote>
@@ -340,7 +58,7 @@
         <div class="hero-actions">
           <a class="btn primary" href="#projects">View Projects</a>
           <a class="btn" href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/kalkidandebassu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a class="btn" href="mailto:kalinamulugeta0817@gmail.com">Contact Me</a>
         </div>
       </section>
@@ -410,17 +128,17 @@
           <p><strong>Python - PyTorch - YOLO - Transformers - CCT - Computer Vision</strong></p>
           <h4>Architecture Diagram</h4>
           <figure class="project-visual">
-            <img src="assets/cct-yolo.svg" alt="Architecture diagram showing the CCT transformer backbone connected to the YOLO detection head" loading="lazy" decoding="async" fetchpriority="low" />
+            <img src="assets/cct-yolo.svg" alt="Architecture diagram showing the CCT transformer backbone connected to the YOLO detection head" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
             <figcaption>CCT-YOLO architecture diagram</figcaption>
           </figure>
           <h4>Detection-Result Screenshots</h4>
           <div class="visual-grid">
             <figure class="project-visual">
-              <img src="assets/Detection_1.jpg.jpg" alt="Detection output example with bounding boxes predicted by the CCT-YOLO model" loading="lazy" decoding="async" fetchpriority="low" />
+              <img src="assets/Detection_1.jpg.jpg" alt="Detection output example with bounding boxes predicted by the CCT-YOLO model" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
               <figcaption>Detection result screenshot 1</figcaption>
             </figure>
             <figure class="project-visual">
-              <img src="assets/Detection_2.jpg" alt="Second detection output sample used to evaluate CCT-YOLO localization performance" loading="lazy" decoding="async" fetchpriority="low" />
+              <img src="assets/Detection_2.jpg" alt="Second detection output sample used to evaluate CCT-YOLO localization performance" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
               <figcaption>Detection result screenshot 2</figcaption>
             </figure>
           </div>
@@ -459,7 +177,7 @@
           <figure class="project-visual">
             <picture>
               <source srcset="assets/ALMP%20Results%20Charts.webp" type="image/webp" />
-              <img src="assets/ALMP%20Results%20Charts.png" alt="Benchmark chart comparing ALMP and baseline mutation scores with token usage" loading="lazy" decoding="async" fetchpriority="low" />
+              <img src="assets/ALMP%20Results%20Charts.png" alt="Benchmark chart comparing ALMP and baseline mutation scores with token usage" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
             </picture>
             <figcaption>ALMP results chart</figcaption>
           </figure>
@@ -500,12 +218,12 @@
           <p><strong>Python - Scikit-learn - Machine Learning - Reinforcement Learning - Jupyter Notebook</strong></p>
           <h4>AI Decision Support Workflow Diagram</h4>
           <figure class="project-visual">
-            <img src="assets/decision-extraction.svg" alt="Workflow showing how model outputs are transformed into decision-ready insights" loading="lazy" decoding="async" fetchpriority="low" />
+            <img src="assets/decision-extraction.svg" alt="Workflow showing how model outputs are transformed into decision-ready insights" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
             <figcaption>AI Decision Support workflow diagram</figcaption>
           </figure>
           <h4>Repository Preview</h4>
           <figure class="project-visual">
-            <img src="assets/repository_preview.svg" alt="Repository structure preview highlighting key modules in the AI Decision Support project" loading="lazy" decoding="async" fetchpriority="low" />
+            <img src="assets/repository_preview.svg" alt="Repository structure preview highlighting key modules in the AI Decision Support project" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
             <figcaption>Repository preview</figcaption>
           </figure>
           <div class="project-links">
@@ -538,7 +256,7 @@
           <p><strong>Python - Scikit-learn - Pandas - NumPy - Matplotlib - Jupyter Notebook</strong></p>
           <h4>ML Analysis Visualizations</h4>
           <figure class="project-visual">
-            <img src="assets/housing-model.svg" alt="Visualization summary of housing prediction and Iris classification model outputs" loading="lazy" decoding="async" fetchpriority="low" />
+            <img src="assets/housing-model.svg" alt="Visualization summary of housing prediction and Iris classification model outputs" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
             <figcaption>ML analysis visualizations</figcaption>
           </figure>
           <div class="project-links">
@@ -569,14 +287,14 @@
             <figure class="project-visual">
               <picture>
                 <source srcset="assets/glosec-use-case.webp" type="image/webp" />
-                <img src="assets/glosec-use-case.png" alt="Use case diagram of GLO-SEC actors and core flows for registration and ownership verification" loading="lazy" decoding="async" fetchpriority="low" />
+                <img src="assets/glosec-use-case.png" alt="Use case diagram of GLO-SEC actors and core flows for registration and ownership verification" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
               </picture>
               <figcaption>Use case diagram</figcaption>
             </figure>
             <figure class="project-visual">
               <picture>
                 <source srcset="assets/glosec-sequence-transfer-ownership.webp" type="image/webp" />
-                <img src="assets/glosec-sequence-transfer-ownership.png" alt="Sequence diagram showing the step-by-step ownership transfer workflow in GLO-SEC" loading="lazy" decoding="async" fetchpriority="low" />
+                <img src="assets/glosec-sequence-transfer-ownership.png" alt="Sequence diagram showing the step-by-step ownership transfer workflow in GLO-SEC" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
               </picture>
               <figcaption>Sequence diagram for transfer ownership</figcaption>
             </figure>
@@ -708,7 +426,7 @@
         <p>Washington, DC 20011</p>
         <p><strong>Email:</strong> <a href="mailto:kalinamulugeta0817@gmail.com">kalinamulugeta0817@gmail.com</a></p>
         <p><strong>Phone:</strong> (202) 961-7071</p>
-        <p><a href="https://www.linkedin.com/in/kalkidandebassu/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p><a href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         <p><a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       </section>
     </main>
@@ -716,7 +434,8 @@
     <footer>
       <p><strong>Kalkidan Debassu</strong></p>
       <p>Software Engineer - AI &amp; Machine Learning - Computer Vision</p>
-      <p>&copy; 2026 Kalkidan Debassu</p>
+      <p>&copy; <span id="year"></span> Kalkidan Debassu</p>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>

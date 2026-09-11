@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Kalkidan Debassu Portfolio</title>
+  <desc id="desc">Software Engineer specializing in AI, Machine Learning, and Computer Vision.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5f7f4" />
+      <stop offset="1" stop-color="#e9f2ec" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#1f5a46" />
+      <stop offset="1" stop-color="#2e7f63" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1030" cy="110" r="180" fill="#dceee5" />
+  <circle cx="120" cy="560" r="220" fill="#e2f2e9" />
+  <rect x="72" y="72" width="1056" height="486" rx="24" fill="#ffffff" stroke="#d7e2d9" stroke-width="2" />
+  <rect x="72" y="72" width="1056" height="14" rx="24" fill="url(#panel)" />
+  <text x="128" y="190" fill="#1f5a46" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">Kalkidan Debassu</text>
+  <text x="128" y="250" fill="#112018" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700">Software Engineer</text>
+  <text x="128" y="312" fill="#112018" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700">AI, Machine Learning, Computer Vision</text>
+  <text x="128" y="386" fill="#496054" font-family="Segoe UI, Arial, sans-serif" font-size="30">Building practical intelligent systems with measurable results.</text>
+  <rect x="128" y="438" width="286" height="62" rx="31" fill="#1f5a46" />
+  <text x="271" y="478" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Portfolio</text>
+  <text x="1080" y="528" text-anchor="end" fill="#496054" font-family="Segoe UI, Arial, sans-serif" font-size="24">kalina0817.github.io/Portfolio</text>
+</svg>

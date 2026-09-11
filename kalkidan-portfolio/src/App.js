@@ -28,7 +28,7 @@ function App() {
 
         <div className="identity-row" aria-label="Professional profile links">
           <span>Washington, DC</span>
-          <a href="mailto:kalkidandebassu@gmail.com">kalkidandebassu@gmail.com</a>
+          <a href="mailto:kalinamulugeta0817@gmail.com">kalinamulugeta0817@gmail.com</a>
           <a href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>

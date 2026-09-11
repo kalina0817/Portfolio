@@ -1,38 +1,54 @@
-const navLinks = document.querySelectorAll('.site-nav a');
+const navLinks = document.querySelectorAll('.main-nav a, .site-nav a');
 const sections = document.querySelectorAll('main section[id]');
-const revealElements = document.querySelectorAll('.reveal');
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
 const yearEl = document.getElementById('year');
-const contactForm = document.getElementById('contact-form');
-const formStatus = document.getElementById('form-status');
-const profilePhoto = document.getElementById('profile-photo');
-const contactEmail = 'kalkidandebassu@gmail.com';
+const analyticsKey = 'portfolio_metrics_v1';
+
+function trackMetric(metricName) {
+  try {
+    const raw = localStorage.getItem(analyticsKey);
+    const metrics = raw ? JSON.parse(raw) : {};
+    metrics[metricName] = Number(metrics[metricName] || 0) + 1;
+    metrics.lastUpdated = new Date().toISOString();
+    localStorage.setItem(analyticsKey, JSON.stringify(metrics));
+  } catch {
+    // Ignore storage exceptions in private mode or restricted contexts.
+  }
+}
 
 if (yearEl) {
   yearEl.textContent = String(new Date().getFullYear());
 }
 
-if (profilePhoto) {
-  profilePhoto.addEventListener('error', () => {
-    const fallbackSrc = profilePhoto.getAttribute('data-fallback-src');
-    if (fallbackSrc && profilePhoto.getAttribute('src') !== fallbackSrc) {
-      profilePhoto.setAttribute('src', fallbackSrc);
+trackMetric('page_view');
+
+document.querySelectorAll('a[href^="http"]').forEach((link) => {
+  link.addEventListener('click', () => {
+    trackMetric('outbound_click');
+  });
+});
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 640) {
+      mainNav.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
     }
   });
 }
-
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-
-revealElements.forEach((el) => revealObserver.observe(el));
 
 const sectionObserver = new IntersectionObserver(
   (entries) => {
@@ -55,28 +71,3 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => sectionObserver.observe(section));
-
-if (contactForm && formStatus) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(contactForm);
-    const name = String(formData.get('name') || '').trim();
-    const email = String(formData.get('email') || '').trim();
-    const message = String(formData.get('message') || '').trim();
-
-    if (!name || !email || !message) {
-      formStatus.textContent = 'Please complete all fields before sending.';
-      return;
-    }
-
-    formStatus.textContent = 'Thanks. Opening your email app now...';
-
-    const subject = encodeURIComponent(`Portfolio message from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-
-    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
-
-    contactForm.reset();
-  });
-}
