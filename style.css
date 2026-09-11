@@ -459,11 +459,19 @@ blockquote {
 }
 
 .project-visual {
-  margin-top: var(--space-3);
+  margin: var(--space-3) 0 0;
+}
+
+.project-visual picture {
+  display: block;
+  width: 100%;
 }
 
 .project-visual img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   border: 1px solid #e2cfb0;
   border-radius: 12px;
   background: #fff;
@@ -475,11 +483,15 @@ blockquote {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--space-2);
   margin-top: var(--space-3);
+  align-items: start;
+}
+
+.visual-grid .project-visual {
+  margin: 0;
 }
 
 .visual-grid .project-visual img {
-  height: 220px;
-  object-fit: contain;
+  height: auto;
 }
 
 .project-visual figcaption {
