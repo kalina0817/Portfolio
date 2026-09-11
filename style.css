@@ -557,13 +557,6 @@ blockquote {
   color: #3a271c;
 }
 
-.contact-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-top: var(--space-2);
-}
-
 .project-visual {
   margin: var(--space-3) 0 0;
 }
@@ -604,7 +597,6 @@ blockquote {
   margin-top: 7px;
   color: #756657;
   font-size: 0.87rem;
-  text-align: center;
 }
 
 .flow {
@@ -710,7 +702,7 @@ footer {
   }
 
   .visual-grid .project-visual img {
-    height: auto;
+    height: 190px;
   }
 }
 
