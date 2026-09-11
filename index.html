@@ -45,21 +45,32 @@
     </header>
 
     <main class="wrap" id="main-content">
-      <section class="section" id="home">
-        <p class="label">Home</p>
-        <h1>Kalkidan Debassu</h1>
-        <h2>Software Engineer | AI &amp; Machine Learning | Computer Vision</h2>
-        <blockquote>
-          <strong>Software engineer with professional development experience and graduate-level expertise in artificial intelligence, machine learning, and computer vision. I build practical software and intelligent systems that combine strong engineering foundations with data-driven methods, measurable evaluation, and real-world problem solving.</strong>
-        </blockquote>
-        <p><strong>M.S. Computer Science Candidate - University of the District of Columbia</strong></p>
-        <p><strong>Expected Graduation: DEC 2026 - GPA: 4.00/4.00</strong></p>
-        <p>Washington, DC</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="btn" href="mailto:kalinamulugeta0817@gmail.com">Contact Me</a>
+      <section class="section hero-section" id="home">
+        <div class="hero-layout">
+          <div class="hero-main">
+            <p class="label">Home</p>
+            <h1>Kalkidan Debassu</h1>
+            <h2>Software Engineer | AI &amp; Machine Learning | Computer Vision</h2>
+            <blockquote>
+              <strong>Software engineer with professional development experience and graduate-level expertise in artificial intelligence, machine learning, and computer vision. I build practical software and intelligent systems that combine strong engineering foundations with data-driven methods, measurable evaluation, and real-world problem solving.</strong>
+            </blockquote>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="mailto:kalinamulugeta0817@gmail.com">Contact Me</a>
+              <a class="btn" href="https://github.com/kalina0817" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/kalkidan-debassu-901671252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+          <aside class="hero-side" aria-label="Quick profile facts">
+            <p class="label">Quick Facts</p>
+            <ul class="hero-facts">
+              <li><strong>M.S. Computer Science Candidate</strong></li>
+              <li>University of the District of Columbia</li>
+              <li><strong>Expected Graduation:</strong> DEC 2026</li>
+              <li><strong>GPA:</strong> 4.00/4.00</li>
+              <li>Washington, DC</li>
+            </ul>
+          </aside>
         </div>
       </section>
 
@@ -96,17 +107,18 @@
         </div>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section section-projects" id="projects">
         <p class="label">Projects</p>
         <h2>Featured Projects</h2>
 
-        <article class="card featured">
+        <article class="card featured project-item">
           <h3>01 - CCT-YOLO</h3>
           <p><strong>AUG-DEC 2025</strong></p>
           <h4><strong>Transformer-Enhanced Real-Time Object Detection</strong></h4>
           <p><strong>Deep Learning - Computer Vision - Transformers - YOLO</strong></p>
           <p>CCT-YOLO is a lightweight object detection system that explores the use of a <strong>Compact Convolutional Transformer (CCT)</strong> as an alternative backbone for YOLO-based object detection.</p>
           <p>The project was designed to investigate whether transformer-based representations could be integrated into an object detection architecture while substantially reducing model complexity.</p>
+          <p class="project-impact"><strong>Impact:</strong> Delivered a compact detection architecture with major parameter savings while preserving practical object-detection capability.</p>
           <h4>What I Built</h4>
           <ul>
             <li>Designed a custom CCT backbone using convolutional tokenization and transformer encoder layers.</li>
@@ -149,13 +161,14 @@
 
         <hr />
 
-        <article class="card">
+        <article class="card project-item">
           <h3>02 - ALMP</h3>
           <p><strong>JAN-MAY 2026</strong></p>
           <h4><strong>Adaptive Learning-Based Mutation Prioritization</strong></h4>
           <p><strong>Machine Learning - Software Testing - Software Engineering</strong></p>
           <p>ALMP is a machine-learning framework designed to improve the efficiency of mutation testing by intelligently prioritizing mutants according to their predicted testing value.</p>
           <p>Instead of treating every generated mutant equally, the system explores how machine learning can identify mutants that are more valuable for testing.</p>
+          <p class="project-impact"><strong>Impact:</strong> Improved mutation-testing effectiveness under similar constraints by prioritizing higher-value mutants.</p>
           <h4>What I Built</h4>
           <ul>
             <li>Developed an ML-based mutant prioritization approach.</li>
@@ -188,13 +201,14 @@
 
         <hr />
 
-        <article class="card">
+        <article class="card project-item">
           <h3>03 - AI Decision Support</h3>
           <p><strong>JAN-MAY 2026</strong></p>
           <h4><strong>AI Decision Extraction &amp; Decision-Support System</strong></h4>
           <p><strong>Artificial Intelligence - Machine Learning - Reinforcement Learning</strong></p>
           <p>This project explores how machine-learning and reinforcement-learning outputs can be transformed into <strong>interpretable decisions</strong> rather than simply presenting raw model predictions.</p>
           <p>The system was designed as a reusable workflow for converting model outputs into practical decision-oriented information.</p>
+          <p class="project-impact"><strong>Impact:</strong> Converted raw model outputs into decision-ready insights that are easier for people to interpret and apply.</p>
           <h4>What I Built</h4>
           <ul>
             <li>Applied <strong>K-Means clustering</strong>.</li>
@@ -233,12 +247,13 @@
 
         <hr />
 
-        <article class="card">
+        <article class="card project-item">
           <h3>04 - Machine Learning Analysis</h3>
           <p><strong>AUG-DEC 2025</strong></p>
           <h4><strong>Housing Price Prediction &amp; Iris Classification</strong></h4>
           <p><strong>Machine Learning - Data Science - Predictive Modeling</strong></p>
           <p>A comparative machine-learning analysis applying supervised and unsupervised learning techniques to housing and Iris datasets.</p>
+          <p class="project-impact"><strong>Impact:</strong> Built a full end-to-end ML workflow showing benchmark-level and real-world dataset behavior side by side.</p>
           <h4>What I Built</h4>
           <ul>
             <li>Developed Linear Regression for housing-price prediction.</li>
@@ -266,10 +281,11 @@
 
         <hr />
 
-        <article class="card">
+        <article class="card project-item">
           <h3>05 - GLO-SEC Laptop Security &amp; Anti-Theft System</h3>
           <p><strong>Bachelor's Degree Graduate Project · Bahir Dar University · SEP 2021-AUG 2022</strong></p>
           <p>Designed and developed a Java-based laptop security and anti-theft system that connects digital ownership records with physical devices through unique QR-code identification. The system provides a digital workflow for laptop registration, ownership verification, and device identification, using Firebase for data management and APIs to support system functionality.</p>
+          <p class="project-impact"><strong>Impact:</strong> Strengthened laptop ownership verification and recovery workflows with a practical QR-based security system.</p>
           <h4>Key Capabilities</h4>
           <ul>
             <li>Developed a digital laptop registration and ownership-management workflow.</li>

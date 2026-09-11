@@ -43,7 +43,7 @@ if (menuToggle && mainNav) {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 640) {
+    if (window.innerWidth > 980) {
       mainNav.classList.remove('is-open');
       menuToggle.setAttribute('aria-expanded', 'false');
     }
