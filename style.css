@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
 
 :root {
-  --bg: #f7f2e9;
-  --bg-soft: #f2e8d6;
-  --panel: #fffdf8;
-  --panel-strong: #fff8ee;
+  --bg: #f6f0e5;
+  --bg-soft: #eee3cf;
+  --panel: #fffdfa;
+  --panel-strong: #fff9f1;
   --text: #1f1a14;
   --muted: #665a4e;
-  --line: #decfb6;
-  --line-strong: #ccb58f;
-  --accent: #af4d2f;
-  --accent-dark: #8d3f27;
-  --accent-soft: #f6ddcd;
-  --support: #226b63;
-  --support-soft: #d9f0ed;
-  --shadow-sm: 0 8px 20px rgba(82, 55, 24, 0.08);
-  --shadow-md: 0 16px 42px rgba(82, 55, 24, 0.12);
+  --line: #dbc7a5;
+  --line-strong: #c4a779;
+  --accent: #a24a2f;
+  --accent-dark: #7d3925;
+  --accent-soft: #f5dece;
+  --support: #1f6159;
+  --support-soft: #d8eeeb;
+  --shadow-sm: 0 10px 24px rgba(77, 52, 27, 0.09);
+  --shadow-md: 0 18px 46px rgba(77, 52, 27, 0.15);
   --space-1: 8px;
   --space-2: 12px;
   --space-3: 16px;
@@ -35,9 +35,9 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 8% 6%, rgba(175, 77, 47, 0.14), transparent 32%),
-    radial-gradient(circle at 92% 12%, rgba(34, 107, 99, 0.14), transparent 34%),
-    linear-gradient(165deg, var(--bg) 0%, #fbf6ee 56%, #f8f1e6 100%);
+    radial-gradient(circle at 8% 6%, rgba(162, 74, 47, 0.16), transparent 30%),
+    radial-gradient(circle at 92% 12%, rgba(31, 97, 89, 0.14), transparent 32%),
+    linear-gradient(165deg, var(--bg) 0%, #fbf6ed 52%, #f7efe2 100%);
   color: var(--text);
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
   line-height: 1.65;
@@ -70,9 +70,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 242, 233, 0.88);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(203, 182, 150, 0.75);
+  background: rgba(250, 245, 236, 0.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(196, 167, 121, 0.52);
+  box-shadow: 0 6px 18px rgba(82, 55, 24, 0.08);
 }
 
 .topbar .wrap {
@@ -124,7 +125,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background: var(--accent-soft);
+  background: linear-gradient(180deg, #f8e8da 0%, #f6decc 100%);
   color: var(--accent-dark);
   transform: translateY(-1px);
 }
@@ -148,7 +149,13 @@ main {
   padding: var(--space-4);
   margin-top: var(--space-4);
   box-shadow: var(--shadow-sm);
-  transition: transform 220ms ease, box-shadow 220ms ease;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #c8ac81;
 }
 
 .label {
@@ -217,7 +224,7 @@ blockquote {
   margin: var(--space-3) 0 0;
   border-left: 4px solid var(--accent);
   padding: var(--space-3);
-  background: #fff4e7;
+  background: linear-gradient(90deg, #fff2e4 0%, #fff8ee 100%);
   color: #4d3829;
   font-size: 1.02rem;
   border-radius: 0 12px 12px 0;
@@ -257,7 +264,7 @@ blockquote {
   border-radius: 16px;
   padding: var(--space-3);
   background:
-    linear-gradient(180deg, #fff5ea 0%, #fffaf2 100%);
+    linear-gradient(180deg, #fff7ec 0%, #fffbf4 100%);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
@@ -284,17 +291,19 @@ blockquote {
   padding: 10px 16px;
   font-weight: 700;
   color: #3a271c;
-  background: #fffef9;
-  transition: transform 170ms ease, box-shadow 170ms ease, background-color 170ms ease;
+  background: linear-gradient(180deg, #fffef9 0%, #fff5e9 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  transition: transform 170ms ease, box-shadow 170ms ease, background-color 170ms ease, border-color 170ms ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(82, 55, 24, 0.12);
+  border-color: #ba9768;
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #cb6846 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #c46544 100%);
   color: #fff;
   border-color: transparent;
 }
@@ -310,7 +319,7 @@ blockquote {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: var(--space-3);
-  background: #fffdf8;
+  background: linear-gradient(180deg, #fffdf9 0%, #fffaf3 100%);
 }
 
 #at-a-glance .card {
@@ -334,7 +343,7 @@ blockquote {
 .result {
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: #fff8ed;
+  background: linear-gradient(180deg, #fff7ec 0%, #fffdf8 100%);
   padding: var(--space-2);
   text-align: center;
   display: flex;
@@ -440,7 +449,7 @@ blockquote {
 }
 
 .comparison-table thead th {
-  background: #f7e7d4;
+  background: #f6e5d2;
   color: #3f2a1e;
   font-weight: 700;
 }
@@ -551,6 +560,21 @@ blockquote {
   text-underline-offset: 3px;
 }
 
+.project-links a {
+  text-decoration: none;
+  border: 1px solid #e2c59f;
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: #fff4e6;
+  transition: transform 170ms ease, background-color 170ms ease, border-color 170ms ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+  background: #fdecd9;
+  border-color: #caa370;
+}
+
 #contact .btn {
   display: inline-flex;
   text-decoration: none;
@@ -573,7 +597,7 @@ blockquote {
   object-fit: contain;
   border: 1px solid #e2cfb0;
   border-radius: 12px;
-  background: #fff;
+  background: linear-gradient(180deg, #ffffff 0%, #fff7ed 100%);
   display: block;
 }
 
@@ -597,6 +621,7 @@ blockquote {
   margin-top: 7px;
   color: #756657;
   font-size: 0.87rem;
+  text-align: center;
 }
 
 .flow {
