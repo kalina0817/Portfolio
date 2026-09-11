@@ -402,6 +402,45 @@ blockquote {
   color: #5f3e2f;
 }
 
+.research-intro {
+  margin-top: 0;
+  max-width: 78ch;
+}
+
+.table-wrap {
+  margin-top: var(--space-3);
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+  border: 1px solid #e6d2b2;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fffaf2;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ecdac0;
+  text-align: left;
+  vertical-align: top;
+  color: #5e4d41;
+}
+
+.comparison-table thead th {
+  background: #f7e7d4;
+  color: #3f2a1e;
+  font-weight: 700;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
 .project-details {
   margin-top: var(--space-3);
   border: 1px solid #ead4b6;

@@ -66,7 +66,7 @@
             <ul class="hero-facts">
               <li><strong>M.S. Computer Science Candidate</strong></li>
               <li>University of the District of Columbia</li>
-              <li><strong>Expected Graduation:</strong> DEC 2026</li>
+              <li><strong>Expected Graduation:</strong> Dec 2026</li>
               <li><strong>GPA:</strong> 4.00/4.00</li>
               <li>Washington, DC</li>
             </ul>
@@ -109,16 +109,60 @@
 
       <section class="section section-projects" id="projects">
         <p class="label">Projects</p>
-        <h2>Featured Projects</h2>
+        <h2>Research Portfolio</h2>
+        <p class="research-intro">Each project below is presented with research-style structure: problem framing, method and tradeoffs, reproducibility details, baseline comparison, and artifact links.</p>
 
         <article class="card featured project-item">
           <h3>01 - CCT-YOLO</h3>
-          <p><strong>AUG-DEC 2025</strong></p>
+          <p><strong>Aug 2025 - Dec 2025</strong></p>
           <h4><strong>Transformer-Enhanced Real-Time Object Detection</strong></h4>
           <p><strong>Deep Learning - Computer Vision - Transformers - YOLO</strong></p>
           <p>CCT-YOLO is a lightweight object detection system that explores the use of a <strong>Compact Convolutional Transformer (CCT)</strong> as an alternative backbone for YOLO-based object detection.</p>
           <p>The project was designed to investigate whether transformer-based representations could be integrated into an object detection architecture while substantially reducing model complexity.</p>
           <p class="project-impact"><strong>Impact:</strong> Delivered a compact detection architecture with major parameter savings while preserving practical object-detection capability.</p>
+          <h4>Problem Statement</h4>
+          <p>Real-time detectors can be accurate but computationally expensive. This project evaluated whether a transformer-informed backbone could significantly reduce model size while keeping practical detection performance.</p>
+          <h4>Method and Tradeoffs</h4>
+          <p>A custom CCT backbone replaced a conventional YOLO backbone. The method prioritizes compactness and deployment efficiency, with tradeoffs in absolute detection performance versus heavier baseline models.</p>
+          <h4>Experimental Setup</h4>
+          <ul>
+            <li><strong>Dataset:</strong> Pascal VOC 2012</li>
+            <li><strong>Task:</strong> Multi-class object detection (20 classes)</li>
+            <li><strong>Training:</strong> 25 epochs</li>
+            <li><strong>Framework:</strong> Python and PyTorch training/evaluation pipeline</li>
+            <li><strong>Reproducibility:</strong> End-to-end implementation details are available in the repository</li>
+          </ul>
+          <h4>Baseline vs Proposed</h4>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Metric</th>
+                  <th>Reference Baseline</th>
+                  <th>CCT-YOLO (Proposed)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Parameter Footprint</td>
+                  <td>100% (reference)</td>
+                  <td>2.2% of baseline</td>
+                </tr>
+                <tr>
+                  <td>Model Size</td>
+                  <td>Larger baseline footprint</td>
+                  <td>5.22 MB</td>
+                </tr>
+                <tr>
+                  <td>mAP@0.5</td>
+                  <td>Reference detector benchmark</td>
+                  <td>21.88%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4>Limitations and Next Steps</h4>
+          <p>Future iterations can improve mAP with longer schedules, augmentation refinement, and architecture tuning while preserving compactness goals.</p>
           <details class="project-details">
             <summary>What I Built</summary>
             <ul>
@@ -157,7 +201,9 @@
             </figure>
           </div>
           <div class="project-links">
-            <a href="https://github.com/kalina0817/CCT-YOLO-Real-Time-Object-Detection" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="https://github.com/kalina0817/CCT-YOLO-Real-Time-Object-Detection" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="assets/cct-yolo.svg" target="_blank" rel="noopener noreferrer">Architecture Diagram</a>
+            <a href="assets/Detection_1.jpg.jpg" target="_blank" rel="noopener noreferrer">Detection Artifact</a>
           </div>
         </article>
 
@@ -165,12 +211,55 @@
 
         <article class="card project-item">
           <h3>02 - ALMP</h3>
-          <p><strong>JAN-MAY 2026</strong></p>
+          <p><strong>Jan 2026 - May 2026</strong></p>
           <h4><strong>Adaptive Learning-Based Mutation Prioritization</strong></h4>
           <p><strong>Machine Learning - Software Testing - Software Engineering</strong></p>
           <p>ALMP is a machine-learning framework designed to improve the efficiency of mutation testing by intelligently prioritizing mutants according to their predicted testing value.</p>
           <p>Instead of treating every generated mutant equally, the system explores how machine learning can identify mutants that are more valuable for testing.</p>
           <p class="project-impact"><strong>Impact:</strong> Improved mutation-testing effectiveness under similar constraints by prioritizing higher-value mutants.</p>
+          <h4>Problem Statement</h4>
+          <p>Mutation testing can become costly when all mutants are treated equally. This work targeted better effectiveness under constrained test budgets by ranking high-value mutants first.</p>
+          <h4>Method and Tradeoffs</h4>
+          <p>An ML-based prioritization strategy ranked likely high-impact mutants. The approach increases yield per budget but introduces model and feature dependence.</p>
+          <h4>Experimental Setup</h4>
+          <ul>
+            <li><strong>Task:</strong> Mutant prioritization under constrained resources</li>
+            <li><strong>Baseline:</strong> Random or non-prioritized mutant selection</li>
+            <li><strong>Evaluation:</strong> Mutation score, token usage, and cost efficiency</li>
+            <li><strong>Implementation:</strong> Python workflow with feature-based ranking and comparative benchmarking</li>
+            <li><strong>Reproducibility:</strong> Pipeline details and benchmark artifacts are in the repository</li>
+          </ul>
+          <h4>Baseline vs Proposed</h4>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Metric</th>
+                  <th>Baseline</th>
+                  <th>ALMP (Proposed)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mutation Score</td>
+                  <td>25%</td>
+                  <td>75%</td>
+                </tr>
+                <tr>
+                  <td>Selection Strategy</td>
+                  <td>Random / uniform</td>
+                  <td>ML-prioritized ranking</td>
+                </tr>
+                <tr>
+                  <td>Resource Yield</td>
+                  <td>Lower yield per budget</td>
+                  <td>Higher yield per budget</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4>Limitations and Next Steps</h4>
+          <p>Next work includes evaluation on broader codebases and additional feature engineering for stronger cross-project generalization.</p>
           <details class="project-details">
             <summary>What I Built</summary>
             <ul>
@@ -199,7 +288,8 @@
             <figcaption>ALMP results chart</figcaption>
           </figure>
           <div class="project-links">
-            <a href="https://github.com/kalina0817/Adaptive-Learning-Based-Mutation-Prioritization--ALMP" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="https://github.com/kalina0817/Adaptive-Learning-Based-Mutation-Prioritization--ALMP" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="assets/ALMP%20Results%20Charts.png" target="_blank" rel="noopener noreferrer">Results Chart</a>
           </div>
         </article>
 
@@ -207,12 +297,55 @@
 
         <article class="card project-item">
           <h3>03 - AI Decision Support</h3>
-          <p><strong>JAN-MAY 2026</strong></p>
+          <p><strong>Jan 2026 - May 2026</strong></p>
           <h4><strong>AI Decision Extraction &amp; Decision-Support System</strong></h4>
           <p><strong>Artificial Intelligence - Machine Learning - Reinforcement Learning</strong></p>
           <p>This project explores how machine-learning and reinforcement-learning outputs can be transformed into <strong>interpretable decisions</strong> rather than simply presenting raw model predictions.</p>
           <p>The system was designed as a reusable workflow for converting model outputs into practical decision-oriented information.</p>
           <p class="project-impact"><strong>Impact:</strong> Converted raw model outputs into decision-ready insights that are easier for people to interpret and apply.</p>
+          <h4>Problem Statement</h4>
+          <p>Many ML systems stop at raw predictions. This project focused on transforming those outputs into ranked and categorized decisions that are more actionable for users.</p>
+          <h4>Method and Tradeoffs</h4>
+          <p>Combined clustering, classification, neural workflows, and reinforcement learning in one decision-extraction pipeline. This improves actionability while increasing implementation complexity.</p>
+          <h4>Experimental Setup</h4>
+          <ul>
+            <li><strong>Datasets:</strong> California Housing, Breast Cancer Wisconsin, MNIST, FrozenLake</li>
+            <li><strong>Methods:</strong> K-Means, SVM, neural-network workflows, Q-learning</li>
+            <li><strong>Outputs:</strong> Rankings, top-k selections, risk categories, grouped segments, policy decisions</li>
+            <li><strong>Implementation:</strong> Modular Python/Jupyter workflow</li>
+            <li><strong>Reproducibility:</strong> Workflow and outputs are documented in repository notebooks and code</li>
+          </ul>
+          <h4>Baseline vs Proposed</h4>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Dimension</th>
+                  <th>Prediction-Only Baseline</th>
+                  <th>Decision Extraction Workflow</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Output Format</td>
+                  <td>Raw labels / probabilities</td>
+                  <td>Actionable decision views</td>
+                </tr>
+                <tr>
+                  <td>Interpretability</td>
+                  <td>Lower for non-technical users</td>
+                  <td>Higher with explicit decision framing</td>
+                </tr>
+                <tr>
+                  <td>Decision Utility</td>
+                  <td>Requires extra translation</td>
+                  <td>Ready for applied decision support</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4>Limitations and Next Steps</h4>
+          <p>Future work can include uncertainty quantification and human-in-the-loop validation for stronger reliability in high-stakes decisions.</p>
           <details class="project-details">
             <summary>What I Built</summary>
             <ul>
@@ -247,7 +380,9 @@
             <figcaption>Repository preview</figcaption>
           </figure>
           <div class="project-links">
-            <a href="https://github.com/kalina0817/AI-Decision-Extraction-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="https://github.com/kalina0817/AI-Decision-Extraction-System" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="assets/decision-extraction.svg" target="_blank" rel="noopener noreferrer">Workflow Diagram</a>
+            <a href="assets/repository_preview.svg" target="_blank" rel="noopener noreferrer">Repository Preview</a>
           </div>
         </article>
 
@@ -255,11 +390,50 @@
 
         <article class="card project-item">
           <h3>04 - Machine Learning Analysis</h3>
-          <p><strong>AUG-DEC 2025</strong></p>
+          <p><strong>Aug 2025 - Dec 2025</strong></p>
           <h4><strong>Housing Price Prediction &amp; Iris Classification</strong></h4>
           <p><strong>Machine Learning - Data Science - Predictive Modeling</strong></p>
           <p>A comparative machine-learning analysis applying supervised and unsupervised learning techniques to housing and Iris datasets.</p>
           <p class="project-impact"><strong>Impact:</strong> Built a full end-to-end ML workflow showing benchmark-level and real-world dataset behavior side by side.</p>
+          <h4>Method and Tradeoffs</h4>
+          <p>Used interpretable baseline models and unsupervised methods to balance explainability with predictive performance on both benchmark and real-world data.</p>
+          <h4>Experimental Setup</h4>
+          <ul>
+            <li><strong>Datasets:</strong> U.S. housing dataset and Iris benchmark dataset</li>
+            <li><strong>Methods:</strong> Linear Regression, KNN, PCA, K-Means</li>
+            <li><strong>Evaluation:</strong> R2, MSE, accuracy, confusion matrix, silhouette score</li>
+            <li><strong>Pipeline:</strong> Data cleaning, outlier handling, train/test split, model evaluation, and visualization</li>
+            <li><strong>Reproducibility:</strong> Notebook workflow and implementation details are available in the repository</li>
+          </ul>
+          <h4>Baseline vs Proposed</h4>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Metric</th>
+                  <th>Reference / Baseline</th>
+                  <th>Project Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Iris Classification Accuracy</td>
+                  <td>Standard benchmark expectation</td>
+                  <td>100% (test split)</td>
+                </tr>
+                <tr>
+                  <td>Housing Regression (R2)</td>
+                  <td>Linear baseline benchmark</td>
+                  <td>0.548</td>
+                </tr>
+                <tr>
+                  <td>Housing KNN Classification</td>
+                  <td>Quartile classification baseline</td>
+                  <td>67.06% accuracy</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <details class="project-details">
             <summary>What I Built</summary>
             <ul>
@@ -283,7 +457,8 @@
             <figcaption>ML analysis visualizations</figcaption>
           </figure>
           <div class="project-links">
-            <a href="https://github.com/kalina0817/housing-iris-ml-analysis" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a href="https://github.com/kalina0817/housing-iris-ml-analysis" target="_blank" rel="noopener noreferrer">Repository</a>
+            <a href="assets/housing-model.svg" target="_blank" rel="noopener noreferrer">Visualization Artifact</a>
           </div>
         </article>
 
@@ -291,9 +466,40 @@
 
         <article class="card project-item">
           <h3>05 - GLO-SEC Laptop Security &amp; Anti-Theft System</h3>
-          <p><strong>Bachelor's Degree Graduate Project · Bahir Dar University · SEP 2021-AUG 2022</strong></p>
+          <p><strong>Bachelor's Degree Graduate Project · Bahir Dar University · Sep 2021 - Aug 2022</strong></p>
           <p>Designed and developed a Java-based laptop security and anti-theft system that connects digital ownership records with physical devices through unique QR-code identification. The system provides a digital workflow for laptop registration, ownership verification, and device identification, using Firebase for data management and APIs to support system functionality.</p>
           <p class="project-impact"><strong>Impact:</strong> Strengthened laptop ownership verification and recovery workflows with a practical QR-based security system.</p>
+          <h4>Method and Tradeoffs</h4>
+          <p>Implemented QR-linked digital ownership records to improve verification speed and traceability, with operational dependence on reliable registration and data hygiene.</p>
+          <h4>Baseline vs Proposed</h4>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Dimension</th>
+                  <th>Traditional Workflow</th>
+                  <th>GLO-SEC Workflow</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ownership Verification</td>
+                  <td>Manual checks</td>
+                  <td>QR-enabled digital verification</td>
+                </tr>
+                <tr>
+                  <td>Traceability</td>
+                  <td>Limited record linkage</td>
+                  <td>Device-to-owner digital linkage</td>
+                </tr>
+                <tr>
+                  <td>Operational Consistency</td>
+                  <td>Process-variable</td>
+                  <td>Structured registration flow</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <details class="project-details">
             <summary>Key Capabilities</summary>
             <ul>
@@ -325,6 +531,10 @@
               <figcaption>Sequence diagram for transfer ownership</figcaption>
             </figure>
           </div>
+          <div class="project-links">
+            <a href="assets/glosec-use-case.png" target="_blank" rel="noopener noreferrer">Use Case Diagram</a>
+            <a href="assets/glosec-sequence-transfer-ownership.png" target="_blank" rel="noopener noreferrer">Sequence Diagram</a>
+          </div>
         </article>
       </section>
 
@@ -333,7 +543,7 @@
         <h2>Professional Experience</h2>
         <article class="card">
           <h3>Software Developer</h3>
-          <p><strong>Kimiya Telecom · SEP 2022-JUL 2023</strong></p>
+          <p><strong>Kimiya Telecom · Sep 2022 - Jul 2023</strong></p>
           <p>Addis Ababa, Ethiopia</p>
           <h4>Key Contributions</h4>
           <ul>
@@ -350,7 +560,7 @@
 
         <article class="card">
           <h3>Software Engineer Intern</h3>
-          <p><strong>Bahir Dar Institute of Technology, Bahir Dar University · MAR 2021-AUG 2021</strong></p>
+          <p><strong>Bahir Dar Institute of Technology, Bahir Dar University · Mar 2021 - Aug 2021</strong></p>
           <p>Bahir Dar, Ethiopia</p>
           <p><strong>Digital ID &amp; Campus Access Control System</strong></p>
           <ul>
@@ -366,7 +576,7 @@
         <article class="card">
           <h3>Concierge</h3>
           <p><strong>A-CLASS Concierge Services LLC</strong></p>
-          <p>JUN 2024-MAY 2026</p>
+          <p>Jun 2024 - May 2026</p>
           <p>Washington, DC</p>
           <p>Provide professional customer service and operational support in an on-site environment.</p>
           <h4>Responsibilities</h4>
@@ -385,7 +595,7 @@
         <article class="card">
           <h3>University of the District of Columbia</h3>
           <p><strong>Master of Science in Computer Science</strong></p>
-          <p><strong>JAN 2025-DEC 2026 · Expected</strong></p>
+          <p><strong>Jan 2025 - Dec 2026 · Expected</strong></p>
           <p><strong>GPA: 4.00/4.00</strong></p>
           <h4>Areas of Study</h4>
           <ul>
@@ -403,7 +613,7 @@
         <article class="card">
           <h3>Bahir Dar University</h3>
           <p><strong>Bachelor of Science in Software Engineering</strong></p>
-          <p><strong>OCT 2017-AUG 2022</strong></p>
+          <p><strong>Oct 2017 - Aug 2022</strong></p>
           <p><strong>GPA: 3.32/4.00</strong></p>
           <h4>Foundation</h4>
           <ul>
