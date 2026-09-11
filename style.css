@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=JetBrains+Mono:wght@500;700&display=swap");
 
 :root {
   --bg: #f7f2e9;
@@ -13,6 +13,7 @@
   --accent-dark: #8d3f27;
   --accent-soft: #f6ddcd;
   --support: #226b63;
+  --support-dark: #1a5750;
   --support-soft: #d9f0ed;
   --shadow-sm: 0 8px 20px rgba(82, 55, 24, 0.08);
   --shadow-md: 0 16px 42px rgba(82, 55, 24, 0.12);
@@ -37,7 +38,10 @@ body {
   background:
     radial-gradient(circle at 8% 6%, rgba(175, 77, 47, 0.14), transparent 32%),
     radial-gradient(circle at 92% 12%, rgba(34, 107, 99, 0.14), transparent 34%),
+    linear-gradient(rgba(30, 46, 64, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 46, 64, 0.045) 1px, transparent 1px),
     linear-gradient(165deg, var(--bg) 0%, #fbf6ee 56%, #f8f1e6 100%);
+  background-size: auto, auto, 28px 28px, 28px 28px, auto;
   color: var(--text);
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
   line-height: 1.65;
@@ -70,9 +74,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 242, 233, 0.88);
+  background: rgba(251, 246, 238, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(203, 182, 150, 0.75);
+  box-shadow: 0 6px 14px rgba(68, 50, 29, 0.08);
 }
 
 .topbar .wrap {
@@ -124,8 +129,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background: var(--accent-soft);
-  color: var(--accent-dark);
+  background: #f9eee0;
+  color: #6e2f1f;
   transform: translateY(-1px);
 }
 
@@ -149,15 +154,28 @@ main {
   margin-top: var(--space-4);
   box-shadow: var(--shadow-sm);
   transition: transform 220ms ease, box-shadow 220ms ease;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 22px 22px 0 0;
+  background: linear-gradient(90deg, var(--support-dark) 0%, rgba(26, 87, 80, 0) 72%);
 }
 
 .label {
   margin: 0;
-  color: var(--support);
+  color: var(--support-dark);
   font-size: 0.74rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   font-weight: 700;
+  font-family: "JetBrains Mono", "Consolas", monospace;
 }
 
 h1,
@@ -215,9 +233,9 @@ hr {
 
 blockquote {
   margin: var(--space-3) 0 0;
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--support-dark);
   padding: var(--space-3);
-  background: #fff4e7;
+  background: linear-gradient(90deg, #eff7f5 0%, #f8fcfb 100%);
   color: #4d3829;
   font-size: 1.02rem;
   border-radius: 0 12px 12px 0;
@@ -257,7 +275,7 @@ blockquote {
   border-radius: 16px;
   padding: var(--space-3);
   background:
-    linear-gradient(180deg, #fff5ea 0%, #fffaf2 100%);
+    linear-gradient(180deg, #f1faf8 0%, #f8fcfb 100%);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
@@ -269,7 +287,7 @@ blockquote {
 
 .hero-facts li {
   padding: 8px 0;
-  border-bottom: 1px solid #ead9bf;
+  border-bottom: 1px solid #d5e8e5;
   color: #5f4f42;
 }
 
@@ -284,7 +302,7 @@ blockquote {
   padding: 10px 16px;
   font-weight: 700;
   color: #3a271c;
-  background: #fffef9;
+  background: linear-gradient(180deg, #fffef9 0%, #fff5e8 100%);
   transition: transform 170ms ease, box-shadow 170ms ease, background-color 170ms ease;
 }
 
@@ -294,7 +312,7 @@ blockquote {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #cb6846 100%);
+  background: linear-gradient(135deg, var(--support-dark) 0%, #2f7a72 100%);
   color: #fff;
   border-color: transparent;
 }
@@ -310,7 +328,7 @@ blockquote {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: var(--space-3);
-  background: #fffdf8;
+  background: linear-gradient(180deg, #fffdf8 0%, #fffaf2 100%);
 }
 
 #at-a-glance .card {
@@ -347,9 +365,10 @@ blockquote {
 
 .result strong {
   display: block;
-  color: var(--accent-dark);
+  color: var(--support-dark);
   font-size: 1.2rem;
   margin-bottom: 2px;
+  font-family: "JetBrains Mono", "Consolas", monospace;
 }
 
 .section-projects > h2 {
@@ -376,10 +395,11 @@ blockquote {
   display: inline-block;
   margin-top: var(--space-2);
   background: var(--support-soft);
-  color: #23564f;
+  color: #1f514b;
   border-radius: 999px;
   padding: 5px 10px;
   font-size: 0.82rem;
+  font-family: "JetBrains Mono", "Consolas", monospace;
 }
 
 .section-projects .project-item > h4:first-of-type {
@@ -440,9 +460,15 @@ blockquote {
 }
 
 .comparison-table thead th {
-  background: #f7e7d4;
-  color: #3f2a1e;
+  background: #e9f3f1;
+  color: #214e48;
   font-weight: 700;
+}
+
+.comparison-table td:nth-child(3),
+.comparison-table td:nth-child(2) {
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 0.93rem;
 }
 
 .comparison-table tbody tr:last-child td {
@@ -533,8 +559,9 @@ blockquote {
 
 .project-metric strong {
   display: block;
-  color: var(--accent-dark);
+  color: var(--support-dark);
   font-size: 1.08rem;
+  font-family: "JetBrains Mono", "Consolas", monospace;
 }
 
 .project-links {
