@@ -5,10 +5,6 @@ const mainNav = document.querySelector('.main-nav');
 const yearEl = document.getElementById('year');
 const analyticsKey = 'portfolio_metrics_v1';
 
-window.addEventListener('load', () => {
-  document.body.classList.add('loaded');
-});
-
 function trackMetric(metricName) {
   try {
     const raw = localStorage.getItem(analyticsKey);
