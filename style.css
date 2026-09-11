@@ -465,7 +465,7 @@ blockquote {
 
 .hero-layout {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
+  grid-template-columns: 1fr;
   gap: var(--space-4);
   align-items: start;
 }
@@ -494,6 +494,7 @@ blockquote {
   padding: var(--space-3);
   background: #f8f9fa;
   box-shadow: none;
+  width: 100%;
 }
 
 .hero-facts {
