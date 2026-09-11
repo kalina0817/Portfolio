@@ -22,6 +22,7 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 48px;
+  --radius-xl: 22px;
 }
 
 * {
@@ -33,6 +34,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   background:
     radial-gradient(circle at 8% 6%, rgba(175, 77, 47, 0.14), transparent 32%),
@@ -41,6 +43,33 @@ body {
   color: var(--text);
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
   line-height: 1.65;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+body::before {
+  width: 360px;
+  height: 360px;
+  top: -120px;
+  right: -110px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(175, 77, 47, 0.18) 0%, rgba(175, 77, 47, 0) 72%);
+}
+
+body::after {
+  width: 320px;
+  height: 320px;
+  bottom: -120px;
+  left: -95px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34, 107, 99, 0.18) 0%, rgba(34, 107, 99, 0) 72%);
 }
 
 .skip-link {
@@ -70,9 +99,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 242, 233, 0.88);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(203, 182, 150, 0.75);
+  background: rgba(255, 248, 235, 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(203, 182, 150, 0.7);
+  box-shadow: 0 8px 22px rgba(89, 61, 32, 0.08);
 }
 
 .topbar .wrap {
@@ -144,11 +174,33 @@ main {
 .section {
   background: linear-gradient(180deg, var(--panel) 0%, var(--panel-strong) 100%);
   border: 1px solid var(--line);
-  border-radius: 22px;
+  border-radius: var(--radius-xl);
   padding: var(--space-4);
   margin-top: var(--space-4);
   box-shadow: var(--shadow-sm);
-  transition: transform 220ms ease, box-shadow 220ms ease;
+  transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #d4ba92;
+}
+
+.section > h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.section > h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent) 0%, rgba(175, 77, 47, 0) 100%);
 }
 
 .label {
@@ -217,14 +269,31 @@ blockquote {
   margin: var(--space-3) 0 0;
   border-left: 4px solid var(--accent);
   padding: var(--space-3);
-  background: #fff4e7;
+  background: linear-gradient(90deg, #fff2e3 0%, #fff8ef 100%);
   color: #4d3829;
   font-size: 1.02rem;
   border-radius: 0 12px 12px 0;
 }
 
 .hero-section {
+  position: relative;
+  overflow: hidden;
   padding: clamp(20px, 4vw, 36px);
+  background:
+    radial-gradient(circle at 14% 8%, rgba(175, 77, 47, 0.12), transparent 35%),
+    radial-gradient(circle at 88% 16%, rgba(34, 107, 99, 0.11), transparent 34%),
+    linear-gradient(180deg, #fffdf9 0%, #fff8ef 100%);
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: auto -40px -70px auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(175, 77, 47, 0.14) 0%, rgba(175, 77, 47, 0) 72%);
+  pointer-events: none;
 }
 
 .hero-layout {
@@ -278,19 +347,22 @@ blockquote {
 }
 
 .btn {
+  position: relative;
   text-decoration: none;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
   padding: 10px 16px;
   font-weight: 700;
   color: #3a271c;
-  background: #fffef9;
-  transition: transform 170ms ease, box-shadow 170ms ease, background-color 170ms ease;
+  background: linear-gradient(180deg, #ffffff 0%, #fff4e7 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: transform 170ms ease, box-shadow 170ms ease, background-color 170ms ease, border-color 170ms ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(82, 55, 24, 0.12);
+  border-color: #caa97f;
 }
 
 .btn.primary {
@@ -311,6 +383,13 @@ blockquote {
   border-radius: 16px;
   padding: var(--space-3);
   background: #fffdf8;
+  transition: transform 210ms ease, box-shadow 210ms ease, border-color 210ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+  border-color: #ceb489;
 }
 
 #at-a-glance .card {
@@ -334,7 +413,7 @@ blockquote {
 .result {
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: #fff8ed;
+  background: linear-gradient(180deg, #fff8ed 0%, #fffdf7 100%);
   padding: var(--space-2);
   text-align: center;
   display: flex;
@@ -551,6 +630,21 @@ blockquote {
   text-underline-offset: 3px;
 }
 
+.project-links a {
+  text-decoration: none;
+  border: 1px solid #e6ccac;
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: #fff6ea;
+  transition: transform 170ms ease, background-color 170ms ease, border-color 170ms ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+  background: #fff0dd;
+  border-color: #d9b181;
+}
+
 #contact .btn {
   display: inline-flex;
   text-decoration: none;
@@ -622,10 +716,40 @@ footer {
   padding: var(--space-3) 0 var(--space-5);
 }
 
+body:not(.loaded) .section {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+body.loaded .section {
+  animation: section-enter 540ms ease forwards;
+}
+
+body.loaded main .section:nth-of-type(2) { animation-delay: 70ms; }
+body.loaded main .section:nth-of-type(3) { animation-delay: 130ms; }
+body.loaded main .section:nth-of-type(4) { animation-delay: 190ms; }
+body.loaded main .section:nth-of-type(5) { animation-delay: 250ms; }
+
+@keyframes section-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 920px) {
   .hero-layout,
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+
+  .hero-section::after {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -725,6 +849,17 @@ footer {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  body::before,
+  body::after,
+  .hero-section::after {
+    display: none;
+  }
+
+  body:not(.loaded) .section {
+    opacity: 1;
+    transform: none;
   }
 
 }
