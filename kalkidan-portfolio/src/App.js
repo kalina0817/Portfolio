@@ -512,6 +512,19 @@ function App() {
           <h2>Professional Experience</h2>
           <div className="experience-grid">
             <article className="experience-card">
+              <h3>Teaching Assistant</h3>
+              <p className="experience-meta">
+                University of the District of Columbia, Computer Science Department | Washington, DC | 09/2026 - Current
+              </p>
+              <ul className="project-list">
+                <li>Supported undergraduate computer science courses by assisting students with programming assignments, coding exercises, and lab work.</li>
+                <li>Provided academic support through office hours and problem-solving sessions to reinforce concepts in programming and software engineering.</li>
+                <li>Helped faculty with course support activities, including grading, student guidance, and instructional follow-up.</li>
+                <li>Facilitated a productive learning environment by clarifying technical concepts and assisting students with assignments and project challenges.</li>
+              </ul>
+            </article>
+
+            <article className="experience-card">
               <h3>AI, Data Science, and Machine Learning Researcher</h3>
               <p className="experience-meta">
                 University of the District of Columbia | Washington, DC | 01/2025 - Current
