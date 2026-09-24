@@ -344,7 +344,8 @@ main {
   border-radius: 16px;
   border-top: 1px solid var(--line);
   padding: var(--space-3);
-  background: #ffffff;
+  background: #102b49;
+  color: #e6f1ff;
   box-shadow: none;
 }
 
@@ -356,11 +357,19 @@ main {
 .serp-panel .card > h3,
 .serp-panel .card > h4 {
   margin-top: 0;
+  color: #f0f7ff;
 }
 
 .serp-panel .card p,
-.serp-panel .card ul {
+.serp-panel .card ul,
+.serp-panel .card li,
+.serp-panel .card strong {
   margin-top: var(--space-2);
+  color: #dfeeff;
+}
+
+.serp-panel .card strong {
+  color: #8fd2ff;
 }
 
 .section {
