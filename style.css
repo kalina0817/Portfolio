@@ -658,8 +658,6 @@ blockquote {
   background: #0f2a47;
   box-shadow: none;
   transition: transform 220ms ease, box-shadow 220ms ease;
-  content-visibility: auto;
-  contain-intrinsic-size: 760px;
 }
 
 .section-projects .project-item p,
